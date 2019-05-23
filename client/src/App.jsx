@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Home from "./pages/Home";
+import Dummycontainer from "./containers/Dummycontainer";
 
 function App() {
-    return <Home />;
+    return <Dummycontainer />;
 }
 
 export default App;
