@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledTitle = styled.h2`
-  padding-top: 30px;
+  padding-top: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 3.25em;
   font-weight: 300;

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledContainer = styled.div`
+const StyledCard = styled.div`
+    margin: 10px;
     font-family: 'Roboto', sans-serif;
     border: 2px solid;
-    padding: 25px 12px 18px;
     background: orange;
     max-width: 550px;
     display: flex;
@@ -14,6 +14,7 @@ const StyledContainer = styled.div`
 `
 
 const Title = styled.h2`
+    margin: 10px;
     color: #fff;
     font-weight: 300;
     @media (max-width: 500px) {
@@ -22,6 +23,8 @@ const Title = styled.h2`
 `
 
 const Text = styled.p`
+    margin: 10px;
+    text-align: center;
     color: #fff;
     font-weight: 300;
     @media (max-width: 500px) {
@@ -30,7 +33,7 @@ const Text = styled.p`
 `
 
 const Action = styled.button`
-    margin: 0 5px;
+    margin: 10px;
     padding: 8px 14px;
     background: rgba(155, 155, 155, 0.2);
     color: #fff;
@@ -44,21 +47,21 @@ const Action = styled.button`
 `
 
 const StyledPhoto = styled.img`
+    margin: 10px;
     width: 50%;
     height: 100%;
-    object-fit: cover;
-    border: 2px solid;
+    object-fit: contain;
 `
 
 const InfoCard = ({ title, text, actions, icon }) => (
-    <StyledContainer>
-        <StyledPhoto src={icon} alt="Logo" />
+    <StyledCard>
+        <StyledPhoto src={icon} />
         <Title>{title}</Title>
         <Text>{text}</Text>
         {actions.map(({ label, ...props }) => (
             <Action { ...props }>{label}</Action>
         ))}
-    </StyledContainer>
+    </StyledCard>
 )
 
 export default InfoCard;
