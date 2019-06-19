@@ -1,26 +1,22 @@
 import React from "react";
-import InfoCard from "./InfoCard";
 import styled from "styled-components";
+import InfoCard from "./InfoCard";
 import SectionTitle from "../styles/SectionTitle";
+import CCClogo from "../assets/CCClogo.png";
 
 const StyledRoot = styled.div`
-    padding: 50px 12px;
-`
-
-const StyledBackground = styled.div`
     height: 300px;
     background-color: #8EB4D1;
 `
 
 const StyledContainer = styled.div`
     display: flex;
-    justify-content: space-between;
-    max-width: 550px;
+    flex-direction: column;
     width: 100%;
-    margin: auto;
+    margin: 0px;
 `
 
-const HowItWorks = (props) => {
+const HowItWorks = () => {
     const onButtonClick = () => alert('You clicked the button!')
     const button = [
         {
@@ -31,26 +27,15 @@ const HowItWorks = (props) => {
 
     return (
         <StyledRoot>
-            <StyledBackground>
+            <StyledContainer>
                 <SectionTitle label={`How It All Works`} inputColor=""/>
-                <StyledContainer>
-                    <InfoCard 
-                        title="title here"
-                        text="text here"
-                        actions={button}
-                    />
-                    <InfoCard 
-                        title="title here"
-                        text="text here"
-                        actions={button}
-                    />
-                    <InfoCard 
-                        title="title here"
-                        text="text here"
-                        actions={button}
-                    />
-                </StyledContainer>
-            </StyledBackground>
+                <InfoCard 
+                    icon={CCClogo}
+                    title="Lorem Decorum"
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
+                    actions={button}
+                />
+            </StyledContainer>
         </StyledRoot>
     )
 }
