@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 import Dummycomponent from "../components/Dummycomponent";
+import SponsorsAndPartners from "../components/SponsorsAndPartners";
 
 export class Dummycontainer extends Component {
     render() {
-        return <Dummycomponent />;
+        return (
+          <div>
+            <Dummycomponent />
+            <SponsorsAndPartners />
+          </div>
+        );
     }
 }
 
