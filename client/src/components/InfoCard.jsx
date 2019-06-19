@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledCard = styled.div`
-    margin: 10px;
+    margin: 20px;
     font-family: 'Roboto', sans-serif;
-    border: 2px solid;
+    border-radius: 2%;
+    box-shadow: 2px 2px #888888;
     background: orange;
-    max-width: 550px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,3 +66,5 @@ const InfoCard = ({ title, text, actions, icon }) => (
 )
 
 export default InfoCard;
+
+//This card component can be reused, just make sure to reference the props in the parent component (see HowItWorks Component for more info)

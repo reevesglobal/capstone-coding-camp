@@ -16,7 +16,7 @@ const StyledContainer = styled.div`
 const StyledCardContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 75%;
     width: 100%;
 `
