@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledTitle = styled.h2`
-  padding-top: 30px;
+  padding-top: ${props => props.inputPadding || "10px"};
   font-family: 'Roboto', sans-serif;
   font-size: 3.25em;
   font-weight: 300;
@@ -13,7 +13,7 @@ const StyledTitle = styled.h2`
 
 const SectionTitle = (props) => {
   return (
-    <StyledTitle inputColor={props.inputColor}>{props.label}</StyledTitle>
+    <StyledTitle inputColor={props.inputColor} inputPadding={props.inputPadding}>{props.label}</StyledTitle>
   );
 }
 
