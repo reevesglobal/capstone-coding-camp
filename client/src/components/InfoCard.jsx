@@ -12,7 +12,7 @@ const StyledCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-`
+`;
 
 const Title = styled.h2`
     margin: 10px;
@@ -21,7 +21,7 @@ const Title = styled.h2`
     @media (max-width: 450px) {
         font-size: 1rem;
     }
-`
+`;
 
 const Text = styled.p`
     margin: 10px;
@@ -31,7 +31,7 @@ const Text = styled.p`
     @media (max-width: 450px) {
         font-size: 0.75rem;
     }
-`
+`;
 
 const Action = styled.button`
     margin: 10px;
@@ -45,14 +45,14 @@ const Action = styled.button`
     :hover {
         opacity: 0.6;
     }
-`
+`;
 
 const StyledPhoto = styled.img`
     margin: 10px;
     width: 50%;
     height: 100%;
     object-fit: contain;
-`
+`;
 
 const InfoCard = ({ title, text, actions, icon }) => (
     <StyledCard inputBGColor="">
