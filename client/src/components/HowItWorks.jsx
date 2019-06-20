@@ -5,10 +5,11 @@ import SectionTitle from "../styles/SectionTitle";
 import CCClogo from "../assets/CCClogo.png";
 
 const StyledContainer = styled.div`
-    height: 600px;
-    background-color: #8EB4D1;
+    background-color: papayawhip;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-flow: wrap;
     width: 100%;
     margin: 0px;
 `
@@ -17,6 +18,7 @@ const StyledCardContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-flow: wrap;
     height: 75%;
     width: 100%;
 `
@@ -47,7 +49,7 @@ const HowItWorks = () => {
 
     return (
         <StyledContainer>
-            <SectionTitle label={`How It All Works`} inputColor=""/>
+            <SectionTitle label={`How It All Works`} inputColor={'palevioletred'} inputPadding="" />
             <StyledCardContainer>
                 <InfoCard 
                     icon={CCClogo}

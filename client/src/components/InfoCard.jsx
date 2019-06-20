@@ -6,7 +6,7 @@ const StyledCard = styled.div`
     font-family: 'Roboto', sans-serif;
     border-radius: 2%;
     box-shadow: 2px 2px #888888;
-    background: orange;
+    background: ${props => props.inputBGColor || "palevioletred"};
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ const Title = styled.h2`
     margin: 10px;
     color: #fff;
     font-weight: 300;
-    @media (max-width: 500px) {
+    @media (max-width: 450px) {
         font-size: 1rem;
     }
 `
@@ -28,7 +28,7 @@ const Text = styled.p`
     text-align: center;
     color: #fff;
     font-weight: 300;
-    @media (max-width: 500px) {
+    @media (max-width: 450px) {
         font-size: 0.75rem;
     }
 `
@@ -36,14 +36,14 @@ const Text = styled.p`
 const Action = styled.button`
     margin: 10px;
     padding: 8px 14px;
-    background: rgba(155, 155, 155, 0.2);
+    background: rgba(155, 155, 155, 0.5);
     color: #fff;
     cursor: pointer;
     border: 1px solid #fff;
     outline: 0;
     font-weight: 300;
     :hover {
-        opacity: 0.8;
+        opacity: 0.6;
     }
 `
 
@@ -55,7 +55,7 @@ const StyledPhoto = styled.img`
 `
 
 const InfoCard = ({ title, text, actions, icon }) => (
-    <StyledCard>
+    <StyledCard inputBGColor="">
         <StyledPhoto src={icon} />
         <Title>{title}</Title>
         <Text>{text}</Text>
@@ -67,4 +67,4 @@ const InfoCard = ({ title, text, actions, icon }) => (
 
 export default InfoCard;
 
-//This card component can be reused, just make sure to reference the props in the parent component (see HowItWorks Component for more info)
+//This card component can be reused, just make sure to reference the props in the parent component (see HowItWorks Component for example)
