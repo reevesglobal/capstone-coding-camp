@@ -12,7 +12,7 @@ const StyledContainer = styled.div`
     flex-flow: wrap;
     width: 100%;
     margin: 0px;
-`
+`;
 
 const StyledCardContainer = styled.div`
     display: flex;
@@ -21,7 +21,7 @@ const StyledCardContainer = styled.div`
     flex-flow: wrap;
     height: 75%;
     width: 100%;
-`
+`;
 
 const HowItWorks = () => {
     const onButtonClick = () => alert('You clicked the button!')
@@ -33,23 +33,23 @@ const HowItWorks = () => {
             label: 'Click Me',
             onClick: onButtonClick,
         },
-    ]
+    ];
     const button2 = [
         {
             label: 'No, Click ME!',
             onClick: onButton2Click,
         }
-    ]
+    ];
     const button3 = [
         {
             label: 'Dude, just click this one.',
             onClick: onButton3Click,
         }
-    ]
+    ];
 
     return (
         <StyledContainer>
-            <SectionTitle label={`How It All Works`} inputColor={'palevioletred'} inputPadding="" />
+            <SectionTitle label={`How It All Works`} inputColor="palevioletred" inputPadding="" />
             <StyledCardContainer>
                 <InfoCard 
                     icon={CCClogo}
@@ -71,7 +71,7 @@ const HowItWorks = () => {
                 />
             </StyledCardContainer>
         </StyledContainer>
-    )
+    );
 }
 
 export default HowItWorks;
