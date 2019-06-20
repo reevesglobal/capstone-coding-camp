@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-import Navigation from "../components/Navigation";
+import React from "react";
 
-export class JumboNavContainer extends Component {
-    render() {
-        return(
-            
-            <Navigation />
-            
-        );
-    }
+const JumboNavContainer = (props) => {
+    return (
+        <div>
+          {props.children}
+        </div>
+    );
 }
 
 export default JumboNavContainer;

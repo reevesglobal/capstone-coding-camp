@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import Dummycomponent from "../components/Dummycomponent";
 import SponsorsAndPartners from "../components/SponsorsAndPartners";
-import Button from "../styles/Button";
 import JumboNavContainer from "./JumboNavContainer";
+import Navigation from "../components/Navigation";
 
 export class Dummycontainer extends Component {
     render() {
         return (
           <div>
-            <JumboNavContainer />
+            <JumboNavContainer>
+              <Navigation />
+            </JumboNavContainer>
             <Dummycomponent />
             <SponsorsAndPartners />
-            <Button />
           </div>
         );
     }
