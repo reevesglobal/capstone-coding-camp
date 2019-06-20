@@ -7,7 +7,7 @@ export class JumboNavContainer extends Component {
             
             <Navigation />
             
-        )
+        );
     }
 }
 
