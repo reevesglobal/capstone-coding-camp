@@ -7,8 +7,6 @@ const StyledBackground = styled.div`
   background-color: #8EB4D1;
 `;
 
-
-
 const SponsorsAndPartners = (props) => {
   return (
     <StyledBackground>
