@@ -10,7 +10,7 @@ const StyledBackground = styled.div`
 const SponsorsAndPartners = (props) => {
   return (
     <StyledBackground>
-      <SectionTitle label={`Sponsors And Partners`} inputColor="" />
+      <SectionTitle label={`Sponsors And Partners`} />
     </StyledBackground>
   );
 }

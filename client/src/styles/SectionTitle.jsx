@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledTitle = styled.h2`
-  padding-top: ${props => props.inputPadding || "10px"};
+  padding-top: ${props => props.inputPadding || "30px"};
+  margin: 0 0 30px 0;
   font-family: 'Roboto', sans-serif;
   font-size: 3.25em;
   font-weight: 300;
