@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../styles/SectionTitle";
-// import QuestionList from "./QuestionList";
+import FAQList from "./FAQList";
 
 const StyledContainer = styled.div`
     background-color: #D1DEE8;
@@ -13,8 +13,7 @@ const StyledContainer = styled.div`
     margin: 0px;
 `;
 
-const QuestionContainer = styled.div`
-    background-color: #BCE0FD;
+const FAQContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,27 +22,35 @@ const QuestionContainer = styled.div`
     margin: 0px;
 `;
 
-const Title = styled.h2`
-    margin: 10px;
-    color: ${props => props.titleColor || "#0E2F64"};
-    font-weight: 400;
-    text-transform: none;
-    @media (max-width: 450px) {
-        font-size: 1rem;
-    }
-`;
-
 const FAQs = () => {
     const questions = [
-        "Do I have to be a self-taught developer to join?", "Do we have to pitch a project idea?", "When do your hackathon camps occur?", "How large are the group sizes?"
+        {
+            id: "q1",
+            question: "Do I have to be a self-taught developer to join?",
+            answer: "Yes."
+        },
+        {
+            id: "q2",
+            question: "Do we have to pitch a project idea?",
+            answer: "No. If you're short on ideas, you can join a team that already has an idea."
+        },
+        {
+            id: "q3",
+            question: "When do your hackathon camps occur?",
+            answer: "Every month."
+        },
+        {
+            id: "q4",
+            question: "How large are the group sizes?",
+            answer: "Group sizes will vary depending upon the number of participants. Expect 4-6.",
+        },
     ];
-    const questionList = questions.map(question => question + " ");
     return (
         <StyledContainer>
             <SectionTitle label={`Frequently Asked Questions`} inputColor="" inputPadding="" /> 
-            <QuestionContainer>
-                <Title>{questionList}</Title>
-            </QuestionContainer>
+            <FAQContainer>
+                <FAQList questionList={questions} />
+            </FAQContainer>
         </StyledContainer>
     )
 }

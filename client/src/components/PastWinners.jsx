@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCard from "./InfoCard";
+import InfoCard from "../styles/InfoCard";
 import SectionTitle from "../styles/SectionTitle";
 import CCClogo from "../assets/CCClogo.png";
 
