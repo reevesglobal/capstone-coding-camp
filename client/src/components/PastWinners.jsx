@@ -5,7 +5,7 @@ import SectionTitle from "../styles/SectionTitle";
 import CCClogo from "../assets/CCClogo.png";
 
 const StyledContainer = styled.div`
-    background-color: papayawhip;
+    background-color: #D1DEE8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,49 +23,52 @@ const StyledCardContainer = styled.div`
     width: 100%;
 `;
 
-const HowItWorks = () => {
+const PastWinners = () => {
     const onButtonClick = () => alert('You clicked the button!')
-    const onButton2Click = () => alert('You clicked THAT button?!?!')
-    const onButton3Click = () => alert("Hmmmm, you're just messing around now aren't you?")
+    const onButton2Click = () => alert('You clicked an exploding kitten...boom...')
+    const onButton3Click = () => alert("chirp chirp.....")
 
     const button = [
         {
-            label: 'Click Me',
+            id: 'button1',
+            label: 'Learn More',
             onClick: onButtonClick,
         },
     ];
     const button2 = [
         {
-            label: 'No, Click ME!',
+            id: 'button3',
+            label: 'Learn More',
             onClick: onButton2Click,
         }
     ];
     const button3 = [
         {
-            label: 'Dude, just click this one.',
+            id: 'button2',
+            label: 'Learn More',
             onClick: onButton3Click,
         }
     ];
 
     return (
         <StyledContainer>
-            <SectionTitle label={`How It All Works`} inputColor="palevioletred" inputPadding="" />
+            <SectionTitle label={`Past Winners`} inputColor="" inputPadding="" />
             <StyledCardContainer>
                 <InfoCard 
                     icon={CCClogo}
-                    title="Lorem DeTitle"
+                    title="Team Name 1"
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
                     actions={button}
                 />
                 <InfoCard 
                     icon={CCClogo}
-                    title="Lorem DeTitle Numero 2"
+                    title="Team Name 2"
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
                     actions={button2}
                 />
                 <InfoCard 
                     icon={CCClogo}
-                    title="Lorem DeTitle Numero 3"
+                    title="Team Name 3"
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
                     actions={button3}
                 />
@@ -74,4 +77,4 @@ const HowItWorks = () => {
     );
 }
 
-export default HowItWorks;
+export default PastWinners;

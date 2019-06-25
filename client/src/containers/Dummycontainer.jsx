@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import HowItWorks from "../components/HowItWorks";
 import SponsorsAndPartners from "../components/SponsorsAndPartners";
 import JumboNavContainer from "./JumboNavContainer";
 import Navigation from "../components/Navigation";
+import PastWinners from "../components/PastWinners";
+import FAQs from "../components/FAQs";
 
 export class Dummycontainer extends Component {
     render() {
@@ -11,8 +12,9 @@ export class Dummycontainer extends Component {
                 <JumboNavContainer>
                     <Navigation />
                 </JumboNavContainer>
-                <HowItWorks />
+                <PastWinners />
                 <SponsorsAndPartners />
+                <FAQs />
             </div>
         );
     }

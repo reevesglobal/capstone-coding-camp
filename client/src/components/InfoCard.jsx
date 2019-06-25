@@ -6,7 +6,7 @@ const StyledCard = styled.div`
     font-family: 'Roboto', sans-serif;
     border-radius: 2%;
     box-shadow: 2px 2px #888888;
-    background: ${props => props.inputBGColor || "palevioletred"};
+    background: ${props => props.inputBGColor || "#7D9EB8"};
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -16,8 +16,9 @@ const StyledCard = styled.div`
 
 const Title = styled.h2`
     margin: 10px;
-    color: #fff;
-    font-weight: 300;
+    color: ${props => props.titleColor || "#0E2F64"};
+    font-weight: 400;
+    text-transform: uppercase;
     @media (max-width: 450px) {
         font-size: 1rem;
     }
@@ -57,14 +58,12 @@ const StyledPhoto = styled.img`
 const InfoCard = ({ title, text, actions, icon }) => (
     <StyledCard inputBGColor="">
         <StyledPhoto src={icon} />
-        <Title>{title}</Title>
+        <Title titleColor="">{title}</Title>
         <Text>{text}</Text>
-        {actions.map(({ label, ...props }) => (
-            <Action { ...props }>{label}</Action>
+        {actions.map(({ label, id, ...props }) => (
+            <Action key={id} { ...props }>{label}</Action>
         ))}
     </StyledCard>
 )
 
 export default InfoCard;
-
-//This card component can be reused, just make sure to reference the props in the parent component (see HowItWorks Component for example)
