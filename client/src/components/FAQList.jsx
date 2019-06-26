@@ -7,6 +7,7 @@ const QuestionContainer = styled.div`
     details summary::-webkit-details-marker {
         display:none;
     }
+    list-style: none;
 `;
 
 const Title = styled.summary`
