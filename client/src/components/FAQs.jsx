@@ -4,7 +4,7 @@ import SectionTitle from "../styles/SectionTitle";
 import FAQList from "./FAQList";
 
 const StyledContainer = styled.div`
-    background-color: #D1DEE8;
+    background-color: #F2FCFE;
     display: flex;
     flex-direction: column;
     justify-content: center;

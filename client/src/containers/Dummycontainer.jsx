@@ -4,6 +4,8 @@ import JumboNavContainer from "./JumboNavContainer";
 import Navigation from "../components/Navigation";
 import PastWinners from "../components/PastWinners";
 import FAQs from "../components/FAQs";
+import ReadyToJoin from "../components/ReadyToJoin";
+import Footer from "../components/Footer";
 
 export class Dummycontainer extends Component {
     render() {
@@ -15,6 +17,8 @@ export class Dummycontainer extends Component {
                 <PastWinners />
                 <SponsorsAndPartners />
                 <FAQs />
+                <ReadyToJoin />
+                <Footer />
             </div>
         );
     }
