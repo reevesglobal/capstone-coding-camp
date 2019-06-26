@@ -4,8 +4,9 @@ import styled from "styled-components";
 const StyledCard = styled.div`
     margin: 20px;
     font-family: 'Roboto', sans-serif;
-    background: ${props => props.inputBGColor || "#7D9EB8"};
+    background: ${props => props.inputBGColor || "#FFFFFF"};
     max-width: 450px;
+    border: 2px solid #D0F4FB;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,8 +54,8 @@ const StyledPhoto = styled.img`
     object-fit: contain;
 `;
 
-const InfoCard = ({ title, text, actions, icon }) => (
-    <StyledCard inputBGColor="">
+const InfoCard = ({ title, text, actions, icon, inputBGColor }) => (
+    <StyledCard inputBGColor={inputBGColor}>
         <StyledPhoto src={icon} />
         <Title titleColor="">{title}</Title>
         <Text>{text}</Text>
