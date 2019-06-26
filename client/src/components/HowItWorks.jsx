@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCard from "./InfoCard";
 import SectionTitle from "../styles/SectionTitle";
-import CCClogo from "../assets/CCClogo.png";
 
 const StyledContainer = styled.div`
-    background-color: papayawhip;
+    background-color: #8EB4D1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,64 +12,85 @@ const StyledContainer = styled.div`
     margin: 0px;
 `;
 
-const StyledCardContainer = styled.div`
+const StyledFlowContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     flex-flow: wrap;
+    padding: 20px;
     height: 75%;
     width: 100%;
 `;
 
+const FlowObject = styled.div`
+    display: flex;
+    flex-flow: wrap;
+    height: 200px;
+    width: 200px;
+    border: 2px solid #10124E;
+    background-color: ${props => props.inputColor || "#D1DEE8"};
+    border-radius: ${props => props.borderRadius || "50%"};
+`;
+
+const Text = styled.p`
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: #225684;
+    font-family: "Arial", serif;
+    font-size: 1.75em;
+    font-weight: 300;
+`;
+
+const Arrow = styled.span`
+    font-size: 150px;
+    margin: 0px;
+    color: #10124E;
+`
+
 const HowItWorks = () => {
-    const onButtonClick = () => alert('You clicked the button!')
-    const onButton2Click = () => alert('You clicked THAT button?!?!')
-    const onButton3Click = () => alert("Hmmmm, you're just messing around now aren't you?")
-
-    const button = [
-        {
-            label: 'Click Me',
-            onClick: onButtonClick,
-        },
-    ];
-    const button2 = [
-        {
-            label: 'No, Click ME!',
-            onClick: onButton2Click,
-        }
-    ];
-    const button3 = [
-        {
-            label: 'Dude, just click this one.',
-            onClick: onButton3Click,
-        }
-    ];
-
     return (
         <StyledContainer>
-            <SectionTitle label={`How It All Works`} inputColor="palevioletred" inputPadding="" />
-            <StyledCardContainer>
-                <InfoCard 
-                    icon={CCClogo}
-                    title="Lorem DeTitle"
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
-                    actions={button}
-                />
-                <InfoCard 
-                    icon={CCClogo}
-                    title="Lorem DeTitle Numero 2"
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
-                    actions={button2}
-                />
-                <InfoCard 
-                    icon={CCClogo}
-                    title="Lorem DeTitle Numero 3"
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"
-                    actions={button3}
-                />
-            </StyledCardContainer>
+            <SectionTitle label={`How It Works`} inputColor="" inputPadding="" />
+            <StyledFlowContainer>
+                <FlowObject
+                    inputColor={""}
+                    borderRadius={""}
+                >
+                    <Text>Join an event</Text>
+                </FlowObject>
+                <Arrow>&#8680;</Arrow>
+                <FlowObject 
+                    inputColor={"#F2FCFE"}
+                    borderRadius={"20%"}
+                >
+                    <Text>Pitch your project idea</Text>
+                </FlowObject>
+                <Arrow>&#8680;</Arrow>
+                <FlowObject 
+                    inputColor={"#FFFFFF"}
+                    borderRadius={"35%"}
+                >
+                    <Text>Vote for your fovourite pitches</Text>
+                </FlowObject>
+                <Arrow>&#8680;</Arrow>
+                <FlowObject 
+                    inputColor={"#F2FCFE"}
+                    borderRadius={"20%"}
+                >
+                    <Text>Get assigned to a team and start building</Text>
+                </FlowObject>
+                <Arrow>&#8680;</Arrow>
+                <FlowObject
+                    inputColor={""}
+                    borderRadius={""}
+                >
+                    <Text>Finish project</Text>
+                </FlowObject>
+            </StyledFlowContainer>
         </StyledContainer>
-    );
+    )
 }
 
 export default HowItWorks;
