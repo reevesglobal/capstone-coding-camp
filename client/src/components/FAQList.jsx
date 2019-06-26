@@ -7,7 +7,6 @@ const QuestionContainer = styled.div`
     details summary::-webkit-details-marker {
         display:none;
     }
-    list-style: none;
 `;
 
 const Title = styled.summary`
@@ -18,6 +17,7 @@ const Title = styled.summary`
     font-family: "Arial", serif;
     font-weight: 500;
     cursor: pointer;
+    list-style: none;
 `;
 
 const Answer = styled.p`

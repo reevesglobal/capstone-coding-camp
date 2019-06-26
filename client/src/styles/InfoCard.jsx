@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./Button";
 
 const StyledCard = styled.div`
     margin: 20px;
@@ -33,20 +34,6 @@ const Text = styled.p`
     }
 `;
 
-const Action = styled.button`
-    background: ${props => props.background || "white"};
-    color: ${props => props.textColor || "black"};
-    font-size: 1em;
-    margin: 1em;
-    padding: 0.25em 1em;
-    border: 2px solid palevioletred;
-    border-radius: 3px;
-    cursor: pointer;
-    :hover {
-        opacity: 0.6;
-    }
-`;
-
 const StyledPhoto = styled.img`
     margin: 10px;
     width: 50%;
@@ -59,13 +46,14 @@ const InfoCard = ({ title, text, actions, icon, inputBGColor }) => (
         <StyledPhoto src={icon} />
         <Title titleColor="">{title}</Title>
         <Text>{text}</Text>
-        {actions.map(({ label, id, ...props }) => (
-            <Action 
+        {actions.map(({ label, id, onClick }) => (
+            <Button 
                 background={"#F6F9FE"} 
                 textColor={"#225684"} 
-                key={id} 
-                { ...props }
-            >{label}</Action>
+                key={id}
+                text={label}
+                onClick={onClick} 
+            />
         ))}
     </StyledCard>
 )

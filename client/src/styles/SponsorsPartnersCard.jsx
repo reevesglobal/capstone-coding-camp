@@ -23,11 +23,11 @@ const StyledSPCardLink = styled.a`
   text-decoration: none;
 `;
 
-const SponsorsPartnersCard = (props) => {
+const SponsorsPartnersCard = ({ mainText, internalLink }) => {
   return (
     <StyledSPCard>
-      <StyledSPCardHeading>{props.header}</StyledSPCardHeading>
-      <StyledSPCardLink href="/contact">{props.link}</StyledSPCardLink>
+      <StyledSPCardHeading>{mainText}</StyledSPCardHeading>
+      <StyledSPCardLink href="/contact">{internalLink}</StyledSPCardLink>
     </StyledSPCard>
   );
 }

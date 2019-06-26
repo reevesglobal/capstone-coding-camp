@@ -17,7 +17,7 @@ const StyledButton = styled.button`
 
 const Button = (props) => {
     return (
-        <StyledButton background={props.background} textColor={props.textColor}>{props.text}</StyledButton>
+        <StyledButton background={props.background} textColor={props.textColor} onClick={props.onClick}>{props.text}</StyledButton>
     );
 }
 

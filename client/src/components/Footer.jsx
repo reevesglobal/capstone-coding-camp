@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledContainer = styled.div`
+const StyledFooter = styled.footer`
     background-color: #0E2F64;
     display: flex;
     flex-direction: column;
@@ -20,11 +20,9 @@ const Text = styled.p`
 
 const Footer = () => {
     return (
-        <StyledContainer>
-            <footer>
-                <Text>© Capstone Coding Camp 2019</Text>
-            </footer>
-        </StyledContainer>
+        <StyledFooter>    
+            <Text>© Capstone Coding Camp 2019</Text>
+        </StyledFooter>
     )
 }
 
