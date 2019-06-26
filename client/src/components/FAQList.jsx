@@ -4,6 +4,9 @@ import styled from "styled-components";
 const QuestionContainer = styled.div`
     text-align: center;
     width: 75%;
+    details summary::-webkit-details-marker {
+        display:none;
+    }
 `;
 
 const Title = styled.summary`
