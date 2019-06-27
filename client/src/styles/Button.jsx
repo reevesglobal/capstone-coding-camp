@@ -9,11 +9,15 @@ const StyledButton = styled.button`
     padding: 0.25em 1em;
     border: 2px solid palevioletred;
     border-radius: 3px;
+    cursor: pointer;
+    :hover {
+        opacity: 0.6;
+    }
 `;
 
 const Button = (props) => {
     return (
-        <StyledButton background={props.background} textColor={props.textColor}>{props.text}</StyledButton>
+        <StyledButton background={props.background} textColor={props.textColor} onClick={props.onClick}>{props.text}</StyledButton>
     );
 }
 

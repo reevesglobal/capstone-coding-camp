@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-import HowItWorks from "../components/HowItWorks";
 import SponsorsAndPartners from "../components/SponsorsAndPartners";
 import JumboNavContainer from "./JumboNavContainer";
 import Navigation from "../components/Navigation";
+import HowItWorks from "../components/HowItWorks";
+import PastWinners from "../components/PastWinners";
+import FAQs from "../components/FAQs";
+import ReadyToJoin from "../components/ReadyToJoin";
+import Footer from "../components/Footer";
 
 export class Dummycontainer extends Component {
     render() {
@@ -12,7 +16,11 @@ export class Dummycontainer extends Component {
                     <Navigation />
                 </JumboNavContainer>
                 <HowItWorks />
+                <PastWinners />
                 <SponsorsAndPartners />
+                <FAQs />
+                <ReadyToJoin />
+                <Footer />
             </div>
         );
     }

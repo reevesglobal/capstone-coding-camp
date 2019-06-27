@@ -1,0 +1,61 @@
+import React from "react";
+import styled from "styled-components";
+import Button from "./Button";
+
+const StyledCard = styled.div`
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: ${props => props.inputBGColor || "#FFFFFF"};
+    max-width: 450px;
+    border: 2px solid #D0F4FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+
+const Title = styled.h2`
+    margin: 10px;
+    color: ${props => props.titleColor || "#10124E"};
+    font-weight: 400;
+    text-transform: uppercase;
+    @media (max-width: 400px) {
+        font-size: 1rem;
+    }
+`;
+
+const Text = styled.p`
+    margin: 10px;
+    text-align: center;
+    color: #0E2F64;
+    font-weight: 200;
+    @media (max-width: 400px) {
+        font-size: 0.75rem;
+    }
+`;
+
+const StyledPhoto = styled.img`
+    margin: 10px;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+`;
+
+const InfoCard = ({ title, text, actions, icon, inputBGColor }) => (
+    <StyledCard inputBGColor={inputBGColor}>
+        <StyledPhoto src={icon} />
+        <Title titleColor="">{title}</Title>
+        <Text>{text}</Text>
+        {actions.map(({ label, id, onClick }) => (
+            <Button 
+                background={"#F6F9FE"} 
+                textColor={"#225684"} 
+                key={id}
+                text={label}
+                onClick={onClick} 
+            />
+        ))}
+    </StyledCard>
+)
+
+export default InfoCard;
