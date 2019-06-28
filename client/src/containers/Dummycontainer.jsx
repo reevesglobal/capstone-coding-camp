@@ -7,11 +7,23 @@ import PastWinners from "../components/PastWinners";
 import FAQs from "../components/FAQs";
 import ReadyToJoin from "../components/ReadyToJoin";
 import Footer from "../components/Footer";
+import { createGlobalStyle } from 'styled-components';
 
+const GlobalStyle = createGlobalStyle`
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        height: 5%;
+        width: 5%;
+    }
+`
 export class Dummycontainer extends Component {
     render() {
         return (
             <div>
+                <GlobalStyle />
                 <JumboNavContainer>
                     <Navigation />
                 </JumboNavContainer>
