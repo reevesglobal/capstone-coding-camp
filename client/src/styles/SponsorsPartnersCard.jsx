@@ -2,8 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSPCard = styled.div`
+  padding: 15px;
   width: 40%;
+  min-width: 300px;
   text-align: center;
+  margin-bottom: 20px;
 `;
 
 const StyledSPCardHeading = styled.h3`
