@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../styles/SectionTitle";
+import FlowObject from "../styles/FlowObject";
+import Arrow from "../styles/Arrow";
 
 const StyledContainer = styled.div`
     background-color: #8EB4D1;
@@ -21,73 +23,26 @@ const StyledFlowContainer = styled.div`
     padding: 20px;
     height: 75%;
     width: 100%;
-`;
 
-const FlowObject = styled.div`
-    display: flex;
-    flex-flow: wrap;
-    height: 200px;
-    width: 200px;
-    border: 2px solid #10124E;
-    background-color: ${props => props.inputColor || "#D1DEE8"};
-    border-radius: ${props => props.borderRadius || "50%"};
+    @media (min-width: 400px) and (max-width: 1400px) {
+        flex-direction: column;
+    }
 `;
-
-const Text = styled.p`
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    color: #225684;
-    font-family: "Arial", serif;
-    font-size: 1.75em;
-    font-weight: 300;
-`;
-
-const Arrow = styled.span`
-    font-size: 150px;
-    margin: 0px;
-    color: #10124E;
-`
 
 const HowItWorks = () => {
     return (
         <StyledContainer>
             <SectionTitle label={`How It Works`} inputColor="" inputPadding="" />
             <StyledFlowContainer>
-                <FlowObject
-                    inputColor={""}
-                    borderRadius={""}
-                >
-                    <Text>Join an event</Text>
-                </FlowObject>
-                <Arrow>&#8680;</Arrow>
-                <FlowObject 
-                    inputColor={"#F2FCFE"}
-                    borderRadius={"20%"}
-                >
-                    <Text>Pitch your project idea</Text>
-                </FlowObject>
-                <Arrow>&#8680;</Arrow>
-                <FlowObject 
-                    inputColor={"#FFFFFF"}
-                    borderRadius={"35%"}
-                >
-                    <Text>Vote for your fovourite pitches</Text>
-                </FlowObject>
-                <Arrow>&#8680;</Arrow>
-                <FlowObject 
-                    inputColor={"#F2FCFE"}
-                    borderRadius={"20%"}
-                >
-                    <Text>Get assigned to a team and start building</Text>
-                </FlowObject>
-                <Arrow>&#8680;</Arrow>
-                <FlowObject
-                    inputColor={""}
-                    borderRadius={""}
-                >
-                    <Text>Finish project</Text>
-                </FlowObject>
+                <FlowObject inputColor={""} borderRadius={""} textInput={"Join an event"} />
+                <Arrow inputColor={""} />
+                <FlowObject inputColor={"#F2FCFE"} borderRadius={"20%"} textInput={"Pitch your project idea"} />
+                <Arrow inputColor={""} />
+                <FlowObject inputColor={"#BCE0FD"} borderRadius={"35%"} textInput={"Vote for your fovourite pitches"} />
+                <Arrow inputColor={""} />
+                <FlowObject inputColor={"#F2FCFE"} borderRadius={"20%"} textInput={"Get assigned to a team and start building"} />
+                <Arrow inputColor={""} />
+                <FlowObject inputColor={""} borderRadius={""} textInput={"Finish project"} />
             </StyledFlowContainer>
         </StyledContainer>
     )
