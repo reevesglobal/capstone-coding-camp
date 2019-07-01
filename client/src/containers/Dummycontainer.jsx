@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import SponsorsAndPartners from "../components/SponsorsAndPartners";
 import JumboNavContainer from "./JumboNavContainer";
 import Navigation from "../components/Navigation";
 import HowItWorks from "../components/HowItWorks";
 import PastWinners from "../components/PastWinners";
+import SponsorsAndPartners from "../components/SponsorsAndPartners";
 import FAQs from "../components/FAQs";
+import Benefits from "../components/Benefits";
 import ReadyToJoin from "../components/ReadyToJoin";
 import Footer from "../components/Footer";
 
@@ -19,6 +20,7 @@ export class Dummycontainer extends Component {
                 <PastWinners />
                 <SponsorsAndPartners />
                 <FAQs />
+                <Benefits />
                 <ReadyToJoin />
                 <Footer />
             </div>
