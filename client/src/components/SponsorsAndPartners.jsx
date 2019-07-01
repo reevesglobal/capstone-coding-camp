@@ -9,6 +9,7 @@ const StyledBackground = styled.section`
 
 const StyledPCCardContainer = styled.div`
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0 0 50px 0;
@@ -19,7 +20,7 @@ const SponsorsAndPartners = () => {
     <StyledBackground>
       <SectionTitle label={`Sponsors And Partners`} />
       <StyledPCCardContainer>
-        <SponsorsPartnersCard mainText={`Want to sponsor one of our camps?`} internalLink={`Contact us`} />
+        <SponsorsPartnersCard mainText="Want to sponsor one of our camps?" internalLink="Contact us" />
         <SponsorsPartnersCard mainText={`Interested in becoming one of our partners?`} internalLink={`Contact us`} />
       </StyledPCCardContainer>
     </StyledBackground>
