@@ -29,7 +29,7 @@ const FlowObject = (props) => {
         >
             <Text>{props.textInput}</Text>
         </StyledFlowObject>
-    )
+    );
 }
 
 export default FlowObject;
