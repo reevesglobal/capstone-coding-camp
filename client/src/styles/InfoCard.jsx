@@ -44,12 +44,19 @@ const StyledPhoto = styled.img`
 const InfoCard = ({ title, text, actions, icon, inputBGColor }) => (
     <StyledCard inputBGColor={inputBGColor}>
         <StyledPhoto src={icon} />
-        <Title titleColor="">{title}</Title>
+        <Title>{title}</Title>
         <Text>{text}</Text>
         {actions.map(({ label, id, onClick }) => (
             <Button 
-                background={"#F6F9FE"} 
-                textColor={"#225684"} 
+                background="#133F86" 
+                color="#F6F9FE" 
+                fontSize="16px"
+                borderRadius="4px"
+                fontFamily="Arial"
+                margin="35px"
+                border="2px solid transparent"
+                hoverColor="#133F86"
+                hoverBorder="2px solid #133F86"
                 key={id}
                 text={label}
                 onClick={onClick} 

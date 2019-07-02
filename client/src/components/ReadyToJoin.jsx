@@ -23,22 +23,28 @@ const ContentContainer = styled.div`
 const Text = styled.p`
     margin: 10px;
     text-align: center;
-    color: #225684;
+    color: rgba(14, 47, 100, 0.7);
     font-family: "Arial", serif;
-    font-size: 2em;
+    font-size: 1.25em;
     font-weight: 300;
 `;
 
 const ReadyToJoin = () => {
     return (
         <StyledContainer>
-            <SectionTitle label={`Ready To Join A Team?`} inputColor="" inputPadding="" /> 
+            <SectionTitle label={`Ready To Join A Team?`} inputColor="rgba(14, 47, 100, 0.87)" /> 
             <ContentContainer>
                 <Text>Next camp starts on the 1st of next month. Don't miss out!</Text>
                 <Button 
-                    text={"JOIN NOW"}
-                    background={"#F6F9FE"}
-                    textColor={"#225684"}
+                    text="JOIN NOW"
+                    borderRadius="4px"
+                    background="#133F86"
+                    color="#F6F9FE"
+                    margin="60px"
+                    border="2px solid transparent"
+                    hoverBG="#D6ECFF"
+                    hoverColor="#133F86"
+                    hoverBorder="2px solid #133F86"
                 />
             </ContentContainer>
         </StyledContainer>
