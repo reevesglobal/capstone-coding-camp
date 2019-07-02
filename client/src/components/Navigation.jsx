@@ -11,7 +11,7 @@ const StyledNavTitle = styled.span`
   font-weight: 300;
   text-align: center;
   color: #ffffff;
-`
+`;
 
 
 const Navigation = (props) => {
