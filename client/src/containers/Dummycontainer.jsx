@@ -18,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
         height: 5%;
         width: 5%;
     }
-`
+`;
+
 export class Dummycontainer extends Component {
     render() {
         return (
