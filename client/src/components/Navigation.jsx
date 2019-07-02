@@ -5,8 +5,8 @@ import logo from '../assets/CCC_logo_5.png';
 
 const StyledNavTitle = styled.span`
   padding-top: ${props => props.inputPadding || "30px"};
-  margin: 0 0 0px 0;
-  font-family: Roboto,medium;
+  margin: 0;
+  font-family: Roboto, medium;
   font-size: 50px;
   font-weight: 300;
   text-align: center;
