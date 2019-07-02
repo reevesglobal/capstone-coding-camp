@@ -48,8 +48,15 @@ const InfoCard = ({ title, text, actions, icon, inputBGColor }) => (
         <Text>{text}</Text>
         {actions.map(({ label, id, onClick }) => (
             <Button 
-                background={"#F6F9FE"} 
-                textColor={"#225684"} 
+                background="#133F86" 
+                textColor="#F6F9FE" 
+                fontSize="16px"
+                borderRadius="4px"
+                fontFamily="Arial"
+                margin="35px"
+                border="2px solid transparent"
+                hoverColor="#133F86"
+                hoverBorder="2px solid #133F86"
                 key={id}
                 text={label}
                 onClick={onClick} 

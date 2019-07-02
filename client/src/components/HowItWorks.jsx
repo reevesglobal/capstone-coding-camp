@@ -38,7 +38,7 @@ const HowItWorks = () => {
                 <Arrow inputColor={""} />
                 <FlowObject inputColor={"#F2FCFE"} borderRadius={"20%"} textInput={"Pitch your project idea"} />
                 <Arrow inputColor={""} />
-                <FlowObject inputColor={"#BCE0FD"} borderRadius={"35%"} textInput={"Vote for your fovourite pitches"} />
+                <FlowObject inputColor={"#BCE0FD"} borderRadius={"35%"} textInput={"Vote for your favourite pitches"} />
                 <Arrow inputColor={""} />
                 <FlowObject inputColor={"#F2FCFE"} borderRadius={"20%"} textInput={"Get assigned to a team and start building"} />
                 <Arrow inputColor={""} />

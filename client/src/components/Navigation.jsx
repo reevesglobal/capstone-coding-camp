@@ -19,7 +19,7 @@ const Navigation = (props) => {
         <div>
             <Button hoverColor={'red'} text={`About`} />
             <Button hoverColor={'royalblue'} text={`Contact`} />
-            <StyledNavTitle>Capstone<img src={logo}/>Coding Camp</StyledNavTitle>
+            <StyledNavTitle>Capstone<img src={logo} alt="Logo of Capstone Coding Camp"/>Coding Camp</StyledNavTitle>
             <Button hoverColor={'royalblue'}  text={`Join now`} />
             <Button hoverColor={'royalblue'} text={`Login`}/>
         </div>        

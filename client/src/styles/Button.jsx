@@ -6,14 +6,15 @@ const StyledButton = styled.button`
     color: ${props => props.color || "white"};
     :hover {
         color: ${props => props.hoverColor};
-        background: ${props => props.background || "white"};
+        background: ${props => props.hoverBG || "white"};
+        border: ${props => props.hoverBorder}
     }
-    font-size: 20px;
-    font-family: verdana;
-    margin: 0px 80px 20px 50px;
+    font-size: ${props => props.fontSize || "20px"};
+    font-family: ${props => props.fontFamily || "verdana"};
+    margin: ${props => props.margin || "0 80px 20px 50px"};
     padding: 8px 16px;
     border: ${props => props.border || "none"};
-    border-radius: 10px;
+    border-radius: ${props => props.borderRadius || "10px"};
     cursor: pointer;
 `;
 
@@ -25,6 +26,12 @@ const Button = (props) => {
             onClick={props.onClick}
             border={props.border}
             hoverColor={props.hoverColor}
+            hoverBorder={props.hoverBorder}
+            hoverBG={props.hoverBG}
+            fontSize={props.fontSize}
+            fontFamily={props.fontFamily}
+            borderRadius={props.borderRadius}
+            margin={props.margin}
         >
             {props.text}
         </StyledButton>

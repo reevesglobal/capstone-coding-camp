@@ -31,21 +31,21 @@ const PastWinners = () => {
     const button = [
         {
             id: 'button1',
-            label: 'Learn More',
+            label: 'LEARN MORE',
             onClick: onButtonClick,
         },
     ];
     const button2 = [
         {
             id: 'button3',
-            label: 'Learn More',
+            label: 'LEARN MORE',
             onClick: onButton2Click,
         }
     ];
     const button3 = [
         {
             id: 'button2',
-            label: 'Learn More',
+            label: 'LEARN MORE',
             onClick: onButton3Click,
         }
     ];
