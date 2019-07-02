@@ -39,7 +39,7 @@ const ReadyToJoin = () => {
                     text="JOIN NOW"
                     borderRadius="4px"
                     background="#133F86"
-                    textColor="#F6F9FE"
+                    color="#F6F9FE"
                     margin="60px"
                     border="2px solid transparent"
                     hoverBG="#D6ECFF"
