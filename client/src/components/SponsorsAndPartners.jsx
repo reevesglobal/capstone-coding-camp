@@ -13,6 +13,12 @@ const StyledPCCardContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding: 0 0 50px 0;
+
+  @supports (display:-ms-grid) { /*Edge only */
+    display: grid;
+    grid-template-columns: 20fr 20fr;
+    justify-items: center;
+  }
 `;
 
 const SponsorsAndPartners = () => {
