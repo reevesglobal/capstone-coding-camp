@@ -3,14 +3,16 @@ import styled from 'styled-components';
 import Button from '../styles/Button';
 
 const StyledMessage = styled.div`
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 const StyledMessageHeading = styled.h4`
     font-size: 2.25em;
     font-family: "Roboto", serif;
     font-weight: 600;
-    color: #10124E;
+    color: #000000;
     text-transform: uppercase;
 `;
 
@@ -22,12 +24,13 @@ const StyledMessageBody = styled.h6`
 `;
 
 
+
 const JumboMessage = ({ headingText, bodyText }) => {
     return (
         <StyledMessage>
             <StyledMessageHeading>{headingText}</StyledMessageHeading>
             <StyledMessageBody>{bodyText}</StyledMessageBody>
-            <Button text={`LEARN MORE`}/>
+            <Button text={`LEARN MORE`} border={'solid 1px'} margin={'0% 38%'} />
         </StyledMessage>
     )
 }
