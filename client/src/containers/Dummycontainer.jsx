@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import JumboNavContainer from "./JumboNavContainer";
 import Navigation from "../components/Navigation";
+import Jumbotron from "../components/Jumbotron";
 import HowItWorks from "../components/HowItWorks";
 import PastWinners from "../components/PastWinners";
 import SponsorsAndPartners from "../components/SponsorsAndPartners";
@@ -15,10 +16,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
-    img {
-        height: 5%;
-        width: 5%;
-    }
+    
 `;
 
 export class Dummycontainer extends Component {
@@ -28,6 +26,7 @@ export class Dummycontainer extends Component {
                 <GlobalStyle />
                 <JumboNavContainer>
                     <Navigation />
+                    <Jumbotron />
                 </JumboNavContainer>
                 <HowItWorks />
                 <PastWinners />

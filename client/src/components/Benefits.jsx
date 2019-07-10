@@ -12,6 +12,12 @@ const ObjectContainer = styled.div`
   flex-flow: wrap;
   justify-content: space-evenly;
   padding: 5px 0 40px 0;
+
+  @supports (display:-ms-grid) { /* Edge only */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
 `;
 
 const universal = {
