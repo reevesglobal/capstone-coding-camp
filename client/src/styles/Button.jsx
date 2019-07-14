@@ -6,15 +6,15 @@ const StyledButton = styled.button`
     color: ${props => props.color || "white"};
     :hover {
         color: ${props => props.hoverColor};
-        background: ${props => props.hoverBG || "white"};
+        background: ${props => props.hoverBG || "none"};
         border: ${props => props.hoverBorder}
     }
     font-size: ${props => props.fontSize || "22px"};
     font-family: ${props => props.fontFamily || "verdana"};
-    margin: ${props => props.margin || "0 80px 20px 100px"};
-    padding: 14px 35px;
+    margin: ${props => props.margin || "none"};
+    padding: ${props => props.padding || '14px 35px'};
     border: ${props => props.border || "none"};
-    border-radius: ${props => props.borderRadius || "10px"};
+    border-radius: ${props => props.borderRadius || "5px"};
     cursor: pointer;
 `;
 
@@ -32,6 +32,7 @@ const Button = (props) => {
             fontFamily={props.fontFamily}
             borderRadius={props.borderRadius}
             margin={props.margin}
+            padding={props.padding}
         >
             {props.text}
         </StyledButton>
