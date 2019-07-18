@@ -5,7 +5,7 @@ import logo from '../assets/CCC_logo_5.png';
 import Image from '../styles/Image';
 
 const NavContainer = styled.nav`
-    width: 100vw;
+    width: 100%;
 `
 
 const StyledNavTitle = styled.span`
@@ -22,22 +22,20 @@ const StyledUL = styled.ul`
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    flex-flow: row-wrap;
     margin: 0;
     padding: 0;
-
 `
-
-
 
 const Navigation = (props) => {
     return(
     <NavContainer>
         <StyledUL>  
-            <li><Button hoverColor={'royalblue'} text={`About`} hoverBG={'white'} margin={'10px'} /></li>
-            <li><Button hoverColor={'royalblue'} text={`Contact`} hoverBG={'white'} margin={'10px'}  /></li>
+            <li><Button hoverColor="royalblue" text="About" hoverBG="white" margin="10px" /></li>
+            <li><Button hoverColor="royalblue" text="Contact" hoverBG="white" margin="10px"  /></li>
                 <StyledNavTitle>Capstone <Image src={logo} height="1.5em" width="2em" /> Coding Camp</StyledNavTitle>
-            <li><Button hoverColor={'royalblue'}  text={`Join now`} hoverBG={'white'} margin={'10px'} /></li>
-            <li><Button hoverColor={'royalblue'} text={`Login`} hoverBG={'white'}  margin={'10px 20px'} /></li>  
+            <li><Button hoverColor="royalblue"  text="Join now" hoverBG="white" margin="10px"  fontFamily=""  /></li>
+            <li><Button hoverColor="royalblue" text="Login" hoverBG="white"  margin="10px 20px" /></li>  
         </StyledUL> 
     </NavContainer>          
     );
