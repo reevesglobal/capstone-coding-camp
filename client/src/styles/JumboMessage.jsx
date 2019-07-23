@@ -4,33 +4,45 @@ import Button from '../styles/Button';
 
 const StyledMessage = styled.div`
     display: flex;
+    padding: 100px;
     flex-direction: column;
-    justify-content: center;
 `;
 
 const StyledMessageHeading = styled.h4`
-    font-size: 2.25em;
+    font-size: 40px;
     font-family: "Roboto", serif;
-    font-weight: 600;
+    font-weight: 300;
+    text-align: center;
     color: #000000;
     text-transform: uppercase;
 `;
 
-const StyledMessageBody = styled.h6`
-    font-size: 1.25em;
+const StyledMessageBody = styled.p`
+    font-size: 26px;
+    text-align: center;
     font-family: "Roboto", serif;
     font-weight: 300;
     color: #225684;
+    flex-flow: wrap;
+    padding-bottom: 40px;
 `;
 
 
 
-const JumboMessage = ({ headingText, bodyText }) => {
+const JumboMessage = ({ bodyText }) => {
     return (
         <StyledMessage>
-            <StyledMessageHeading>{headingText}</StyledMessageHeading>
-            <StyledMessageBody>{bodyText}</StyledMessageBody>
-            <Button text={`LEARN MORE`} border={'solid 1px'} margin={'0% 38%'} />
+            <StyledMessageHeading>The <strong>Ultimate</strong> Virtual Hackathon Competition</StyledMessageHeading>
+            <StyledMessageBody>Build awesome projects with other self-taught developers and designers</StyledMessageBody>
+            <Button 
+            text="LEARN MORE" 
+            color="#025093" 
+            border="2px solid #004e92" 
+            margin="auto" 
+            fontFamily="Arial, Bold"
+            fontSize="24px"
+            fontWeight="600"
+            />
         </StyledMessage>
     )
 }

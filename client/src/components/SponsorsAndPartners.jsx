@@ -24,10 +24,10 @@ const StyledPCCardContainer = styled.div`
 const SponsorsAndPartners = () => {
   return (
     <StyledBackground>
-      <SectionTitle label={`Sponsors And Partners`} />
+      <SectionTitle label="Sponsors And Partners" />
       <StyledPCCardContainer>
         <SponsorsPartnersCard mainText="Want to sponsor one of our camps?" internalLink="Contact us" />
-        <SponsorsPartnersCard mainText={`Interested in becoming one of our partners?`} internalLink={`Contact us`} />
+        <SponsorsPartnersCard mainText="Interested in becoming one of our partners?" internalLink="Contact us" />
       </StyledPCCardContainer>
     </StyledBackground>
   );
