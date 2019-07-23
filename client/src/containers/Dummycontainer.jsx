@@ -1,22 +1,17 @@
 import React, { Component } from "react";
-import JumboNavContainer from "./JumboNavContainer";
-import Navigation from "../components/Navigation";
-import Jumbotron from "../components/Jumbotron";
-import HowItWorks from "../components/HowItWorks";
-import PastWinners from "../components/PastWinners";
-import SponsorsAndPartners from "../components/SponsorsAndPartners";
-import FAQs from "../components/FAQs";
-import Benefits from "../components/Benefits";
-import ReadyToJoin from "../components/ReadyToJoin";
-import Footer from "../components/Footer";
-import { createGlobalStyle } from 'styled-components';
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import { createGlobalStyle } from "styled-components";
+import { Route } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-    }
-    
+    }  
 `;
 
 export class Dummycontainer extends Component {
@@ -24,17 +19,11 @@ export class Dummycontainer extends Component {
         return (
             <div>
                 <GlobalStyle />
-                <JumboNavContainer>
-                    <Navigation />
-                    <Jumbotron />
-                </JumboNavContainer>
-                <HowItWorks />
-                <PastWinners />
-                <SponsorsAndPartners />
-                <FAQs />
-                <Benefits />
-                <ReadyToJoin />
-                <Footer />
+                <Route exact path="/" render={() => <Home />} />
+                <Route path="/about" render={() => <About />} />
+                <Route path="/contact" render={() => <Contact />} />
+                <Route path="/login" render={() => <Login />} />
+                <Route path="/register" render={() => <Register />} />
             </div>
         );
     }
