@@ -35,7 +35,7 @@ const universal = {
 const Benefits = () => {
   return (
     <StyledBackground>
-      <SectionTitle label={`Key benefits of participating`}/>
+      <SectionTitle label="Key benefits of participating"/>
       <ObjectContainer>
         <FlowObject
           margin={universal.margin}

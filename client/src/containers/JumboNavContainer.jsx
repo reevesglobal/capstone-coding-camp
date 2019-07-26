@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const  ContainerBackground = styled.div`
     height: 800px;
-    background-image: linear-gradient(#035093, #b6d0e3);
+    background-image: linear-gradient(#035093, #f2fcfe);
 `;
 
 const JumboNavContainer = (props) => {
