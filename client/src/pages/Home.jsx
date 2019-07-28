@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JumboNavContainer from "../containers/JumboNavContainer";
+import Mission from "../components/Mission";
 import Navigation from "../components/Navigation";
 import Jumbotron from "../components/Jumbotron";
 import HowItWorks from "../components/HowItWorks";
@@ -18,6 +19,7 @@ export class Home extends Component {
           <Navigation />
           <Jumbotron />
         </JumboNavContainer>
+        <Mission />
         <HowItWorks />
         <PastWinners />
         <SponsorsAndPartners />

@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 const StyledImg = styled.img`
     height: ${props => props.height};
+    width: ${props => props.width};
     max-width: ${props => props.maxWidth};
     src: url(${props => props.src});
     position: ${props => props.position};
-    margin: ${props => props.margin};
+    margin-left: ${props => props.marginLeft};
     top: ${props => props.top};
     left: ${props => props.left};
 
@@ -26,15 +27,16 @@ const Image = (props) => {
     return (
         <StyledImg 
             height={props.height} 
+            width={props.width}
             max-width={props.maxWidth} 
             src={props.src} 
+            margin-left={props.marginLeft}
             float={props.float} 
             position={props.position}
             top={props.top}
             left={props.left}
             mobilePos={props.mobilePos}
-            mobileTop={props.mobileTop}
-            mobileLeft={props.mobileLeft}     
+            mobileTop={props.mobileTop}    
         />
     );
 }
