@@ -47,7 +47,7 @@ const FAQs = () => {
     ];
     return (
         <StyledContainer>
-            <SectionTitle label={`Frequently Asked Questions`} inputColor="" inputPadding="" /> 
+            <SectionTitle label="Frequently Asked Questions" inputColor="" inputPadding="" /> 
             <FAQContainer>
                 <FAQList questionList={questions} />
             </FAQContainer>

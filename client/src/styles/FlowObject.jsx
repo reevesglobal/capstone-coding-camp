@@ -11,6 +11,7 @@ const StyledFlowObject = styled.div`
     border: ${props => props.border || "2px solid #10124E"};
     background-color: ${props => props.inputColor || "#D1DEE8"};
     border-radius: ${props => props.borderRadius || "50%"};
+    src: url(${props => props.src});
 `;
 
 const Text = styled.p`
@@ -33,6 +34,7 @@ const FlowObject = (props) => {
             border={props.border}
             inputColor={props.inputColor}
             borderRadius={props.borderRadius}
+            src={props.src}
         >
             <Text
                 textPadding={props.textPadding}

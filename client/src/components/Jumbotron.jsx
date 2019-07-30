@@ -12,7 +12,6 @@ const StyledJTContainer = styled.div`
 
 const Jumbotron = () => {
     return (
-       <div>
         <StyledJTContainer>
             <Image height="480px"  src={secondImg}   />
             <Image 
@@ -26,7 +25,6 @@ const Jumbotron = () => {
             />
             <JumboMessage />
         </StyledJTContainer>
-       </div>
     );
 }
 

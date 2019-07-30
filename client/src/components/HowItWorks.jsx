@@ -32,7 +32,7 @@ const StyledFlowContainer = styled.div`
 const HowItWorks = () => {
     return (
         <StyledContainer>
-            <SectionTitle label={`How It Works`} inputColor="" inputPadding="" />
+            <SectionTitle label="How It Works" inputColor="" inputPadding="" />
             <StyledFlowContainer>
                 <FlowObject inputColor={""} borderRadius={""} textInput={"Join an event"} />
                 <Arrow inputColor={""} />
