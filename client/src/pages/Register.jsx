@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import RegistrationLogo from '../styles/RegistrationLogo';
+import FormContainer from '../containers/FormContainer';
 
 const RegisterPage = styled.div`
   display: flex;
@@ -31,13 +32,6 @@ const MainHeader = styled.h1`
   font-weight: 500;
 `;
 
-const SecondaryHeader = styled.h3`
-  margin-left: 12vw;
-  color: #004E92;
-  font-family: 'Roboto';
-  font-weight: 400;
-`;
-
 export class Register extends Component {
   render () {
     return (
@@ -47,9 +41,7 @@ export class Register extends Component {
         </LeftContainer>
         <RightContainer>
           <MainHeader>REGISTER</MainHeader>
-          <SecondaryHeader>Firstname</SecondaryHeader>
-          <SecondaryHeader>Email</SecondaryHeader>
-          <SecondaryHeader>Password</SecondaryHeader>
+          <FormContainer />
         </RightContainer>
       </RegisterPage>
     );
