@@ -11,7 +11,7 @@ const fadeIn = keyframes`
 `;
 
 const InputField = styled.input`
-  margin-right: 50px;
+  margin-right: 100px;
   max-width: 300px;
   padding: 15px 10px 5px;
   border: none;
