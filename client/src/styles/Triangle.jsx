@@ -7,7 +7,6 @@ const TriangleShape = styled.div`
   left: 116px;
   width: 0;
   height: 0;
-  background: gradient(black, black);
   border-left: 84px solid transparent; /* half width */
   border-right: 84px solid transparent; /* half width */
   border-bottom: 126px solid #fff; /* height */
