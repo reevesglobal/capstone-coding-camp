@@ -32,8 +32,8 @@ const Answer = styled.p`
 const FAQList = ({ questionList }) => (
     <QuestionContainer>
         {questionList.map(({ question, answer, id }) => (
-            <details>
-                <Title key={id}>"{question}"</Title>
+            <details key={id}>
+                <Title>"{question}"</Title>
                 <Answer>{answer}</Answer>
             </details>
         ))}
