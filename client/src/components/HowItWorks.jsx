@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../styles/SectionTitle";
 import FlowObject from "../styles/FlowObject";
-import Arrow from "../styles/Arrow";
 
 const StyledContainer = styled.div`
     background-color: #8EB4D1;
@@ -14,7 +13,7 @@ const StyledContainer = styled.div`
     margin: 0px;
 `;
 
-const StyledFlowContainer = styled.div`
+const StyledProcessContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -23,9 +22,23 @@ const StyledFlowContainer = styled.div`
     padding: 20px;
     height: 75%;
     width: 100%;
+`;
 
-    @media (min-width: 400px) and (max-width: 1400px) {
-        flex-direction: column;
+const StyledInnerContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+const Text = styled.p`
+    font-family: "Arial", serif;
+    margin: 10px;
+    text-align: center;
+    color: #0E2F64;
+    font-size: 1.75em;
+    font-weight: 300;
+    @media (max-width: 400px) {
+        font-size: 0.75rem;
     }
 `;
 
@@ -33,17 +46,28 @@ const HowItWorks = () => {
     return (
         <StyledContainer>
             <SectionTitle label="How It Works" inputColor="" inputPadding="" />
-            <StyledFlowContainer>
-                <FlowObject inputColor={""} borderRadius={""} textInput={"Join an event"} />
-                <Arrow inputColor={""} />
-                <FlowObject inputColor={"#F2FCFE"} borderRadius={"20%"} textInput={"Pitch your project idea"} />
-                <Arrow inputColor={""} />
-                <FlowObject inputColor={"#BCE0FD"} borderRadius={"35%"} textInput={"Vote for your favourite pitches"} />
-                <Arrow inputColor={""} />
-                <FlowObject inputColor={"#F2FCFE"} borderRadius={"20%"} textInput={"Get assigned to a team and start building"} />
-                <Arrow inputColor={""} />
-                <FlowObject inputColor={""} borderRadius={""} textInput={"Finish project"} />
-            </StyledFlowContainer>
+            <StyledProcessContainer>
+                <StyledInnerContainer>
+                    <Text>Step 1:</Text>
+                    <FlowObject fontFamily={"Monospace"} inputColor={""} borderRadius={""} textInput={"Register and/or join an event"} />
+                </StyledInnerContainer>
+                <StyledInnerContainer>
+                    <Text>Step 2:</Text>
+                    <FlowObject fontFamily={"Monospace"} inputColor={"#F2FCFE"} borderRadius={""} textInput={"Pitch your project idea to the community"} />
+                </StyledInnerContainer>
+                <StyledInnerContainer>
+                    <Text>Step 3:</Text>
+                    <FlowObject fontFamily={"Monospace"} inputColor={""} borderRadius={""} textInput={"Vote for your favourite pitches"} />
+                </StyledInnerContainer>
+                <StyledInnerContainer>
+                    <Text>Step 4:</Text>
+                    <FlowObject fontFamily={"Monospace"} inputColor={"#F2FCFE"} borderRadius={""} textInput={"Get assigned to a team and start building"} />
+                </StyledInnerContainer>
+                <StyledInnerContainer>
+                    <Text>Step 5:</Text>
+                    <FlowObject fontFamily={"Monospace"} inputColor={"#BCE0FD"} borderRadius={""} textInput={"Finish and submit project"} />
+                </StyledInnerContainer>
+            </StyledProcessContainer>
         </StyledContainer>
     )
 }

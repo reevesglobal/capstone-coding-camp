@@ -10,7 +10,7 @@ const StyledFlowObject = styled.div`
     width: ${props => props.width || "200px"};
     border: ${props => props.border || "2px solid #10124E"};
     background-color: ${props => props.inputColor || "#D1DEE8"};
-    border-radius: ${props => props.borderRadius || "50%"};
+    border-radius: ${props => props.borderRadius || "10%"};
     src: url(${props => props.src});
 `;
 
@@ -19,7 +19,7 @@ const Text = styled.p`
     margin: 0;
     text-align: center;
     color: ${props => props.textColor || "#225684"};
-    font-family: "Arial", serif;
+    font-family: ${props => props.fontFamily || "Arial, serif"};
     font-size: ${props => props.textSize || "1.75em"};
     font-weight: ${props => props.textWeight || "300"};
     text-transform: ${props => props.textTransform || "none"};
@@ -37,6 +37,7 @@ const FlowObject = (props) => {
             src={props.src}
         >
             <Text
+                fontFamily={props.fontFamily}
                 textPadding={props.textPadding}
                 textColor={props.textColor}
                 textSize={props.textSize}
