@@ -2,6 +2,7 @@
   "name": "capstone-coding-camp",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "homepage": "https://confidenceiskey.github.io/capstone-coding-camp/client/",
   "dependencies": {
     "lodash": "^4.17.15",
@@ -12,12 +13,13 @@
     "styled-components": "^4.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "deploy": "master",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:8000",
   "eslintConfig": {
     "extends": "react-app"
   },
