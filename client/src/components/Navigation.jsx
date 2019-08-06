@@ -6,24 +6,18 @@ import Image from '../styles/Image';
 import { Link } from 'react-router-dom';
 
 const NavContainer = styled.nav`
-    width: 100%;
-`;
-
-const StyledNavTitle = styled.span`
-    margin: 0;
-    font-family: 'Roboto', medium, sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
-    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 `;
 
 const StyledUL = styled.ul`
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
-    flex-flow: row-wrap;
-    margin: 0;
+    margin-top: 5px;
     padding: 0;
 `;
 
@@ -52,9 +46,7 @@ const Navigation = (props) => {
                     </Link>
                 </li>
                 <Link to='/' style={{textDecoration:'none'}}>
-                    <StyledNavTitle>
-                        <Image src={logo} height="250px" width="330px" />
-                    </StyledNavTitle>
+                    <Image src={logo} height="125px" width="200px" />
                 </Link>
                 <li>
                     <Link to='/register/'>

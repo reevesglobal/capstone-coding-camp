@@ -9,18 +9,23 @@ const StyledJTContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-flow: wrap;
+    align-items: center;
+    flex-flow: row-wrap;
 
     @media (max-width: 968px) {  
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
 `;
 
 const Jumbotron = () => {
     return (
         <StyledJTContainer>
-            <Image height="480px"  src={secondImg} />
+            <Image 
+                height="auto"  
+                src={secondImg}
+            />
             <Image 
                 height="auto"  
                 src={img}  
