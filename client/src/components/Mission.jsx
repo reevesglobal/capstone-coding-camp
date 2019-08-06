@@ -4,10 +4,15 @@ import SectionTitle from "../styles/SectionTitle";
 import Image from '../styles/Image';
 import FlowObject from '../styles/FlowObject';
 
-const Background = styled.div`
-    background-color: #f2fcfe
-`
-
+const StyledContainer = styled.div`
+    background-color: #F2FCFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 100%;
+    margin: 0px;
+`;
 
 const MissionContainer = styled.div`
     display: flex;
@@ -15,74 +20,64 @@ const MissionContainer = styled.div`
     flex-flow: wrap;
     width: 100%;
     margin: 0px;
-    padding-bottom: 100px;
 
-    @supports (display:-ms-grid) { /* Edge only */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
+    @media (max-width: 968px) {  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 `;
 
-const Container = styled.span`
+const StyledInnerContainer = styled.div`
     display: flex;
-    justify-content: space-evenly;
-
-    @supports (display:-ms-grid) { /* Edge only */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-`
-
-
-
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+`;
 
 const Mission = () => {
     return(
-    <Background>
+    <StyledContainer>
         <SectionTitle label="Our Mission" />
-        <Container>
-        <Image src="https://via.placeholder.com/300X184" alt="" />
-        <Image src="https://via.placeholder.com/300X184" alt="" />
-        <Image src="https://via.placeholder.com/300X184" alt=""   />
-        </Container> 
         <MissionContainer>
-         
-            <FlowObject 
-             borderRadius="1%"
-             bakground-color="black"
-             textInput="Connect Developers"
-             height="100px"
-             width="300px"
-             border="none"
-            >
-            </FlowObject>
-            <FlowObject 
-             borderRadius="1%"
-             bakground-color="black"
-             textInput="Through Team Projects"
-             src="https://via.placeholder.com/150"
-             inputColor=""
-             height="100px"
-             width="300px"
-             border="none"
-            >
-            text
-            </FlowObject>
-            <FlowObject 
-             borderRadius="1%"
-             bakground-color="black"
-             textInput="On a supportive platform"
-             src="https://via.placeholder.com/150"
-             inputColor=""
-             height="100px"
-             width="300px"
-             border="none"
-            >
-            text
-            </FlowObject>
+            <StyledInnerContainer>
+                <Image src="https://via.placeholder.com/300X184" alt="" />
+                <FlowObject 
+                    borderRadius="1%"
+                    bakground-color="black"
+                    textInput="Connect Developers"
+                    height="100px"
+                    width="300px"
+                    border="none"
+                />
+            </StyledInnerContainer>
+            <StyledInnerContainer>
+                <Image src="https://via.placeholder.com/300X184" alt="" />
+                <FlowObject 
+                    borderRadius="1%"
+                    bakground-color="black"
+                    textInput="Through Team Projects"
+                    src="https://via.placeholder.com/150"
+                    inputColor=""
+                    height="100px"
+                    width="300px"
+                    border="none"
+                />
+            </StyledInnerContainer>
+            <StyledInnerContainer>
+                <Image src="https://via.placeholder.com/300X184" alt=""   />
+                <FlowObject 
+                    borderRadius="1%"
+                    bakground-color="black"
+                    textInput="On a supportive platform"
+                    src="https://via.placeholder.com/150"
+                    inputColor=""
+                    height="100px"
+                    width="300px"
+                    border="none"
+                />
+            </StyledInnerContainer>
         </MissionContainer>
-    </Background>
+    </StyledContainer>
     )
 }
 

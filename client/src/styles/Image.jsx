@@ -15,12 +15,7 @@ const StyledImg = styled.img`
         position: ${props => props.mobilePos};
         top: ${props => props.mobileTop};
     }
-    
-    @media (max-width: 968px) {  
-        display: none;
-
-    }
-`
+`;
 
 
 const Image = (props) => {

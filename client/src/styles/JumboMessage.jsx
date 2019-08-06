@@ -27,21 +27,19 @@ const StyledMessageBody = styled.p`
     padding-bottom: 40px;
 `;
 
-
-
 const JumboMessage = ({ bodyText }) => {
     return (
         <StyledMessage>
             <StyledMessageHeading>The <strong>Ultimate</strong> Virtual Hackathon Competition</StyledMessageHeading>
             <StyledMessageBody>Build awesome projects with other self-taught developers and designers</StyledMessageBody>
             <Button 
-            text="LEARN MORE" 
-            color="#025093" 
-            border="2px solid #004e92" 
-            margin="auto" 
-            fontFamily="Arial, Bold"
-            fontSize="24px"
-            fontWeight="600"
+                text="LEARN MORE" 
+                color="#025093" 
+                border="2px solid #004e92" 
+                margin="auto" 
+                fontFamily="Arial, Bold"
+                fontSize="24px"
+                fontWeight="600"
             />
         </StyledMessage>
     )

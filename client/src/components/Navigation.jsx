@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../styles/Button';
-import logo from '../assets/CCC_logo_5.png';
+import logo from '../assets/CCClogo_WHITE.png';
 import Image from '../styles/Image';
 import { Link } from 'react-router-dom';
 
@@ -53,7 +53,7 @@ const Navigation = (props) => {
                 </li>
                 <Link to='/' style={{textDecoration:'none'}}>
                     <StyledNavTitle>
-                        Capstone <Image src={logo} height="1.5em" width="2em" /> Coding Camp
+                        <Image src={logo} height="250px" width="330px" />
                     </StyledNavTitle>
                 </Link>
                 <li>
