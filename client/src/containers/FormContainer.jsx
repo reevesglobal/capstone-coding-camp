@@ -86,7 +86,7 @@ class FormContainer extends Component {
             borderRadius="4px"
             background="#fff"
             color="#133F86"
-            margin="60px"
+            margin="60px 60px 20px"
             border="2px solid #133F86"
             hoverBG="#133F86"
             hoverColor="#F6F9FE"
