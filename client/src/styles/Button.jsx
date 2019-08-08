@@ -9,6 +9,9 @@ const StyledButton = styled.button`
         background: ${props => props.hoverBG || "none"};
         border: ${props => props.hoverBorder}
     }
+    :focus {
+      outline: none;
+    }
     font-size: ${props => props.fontSize || "22px"};
     font-family: ${props => props.fontFamily || "verdana"};
     margin: ${props => props.margin || "none"};
