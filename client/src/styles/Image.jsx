@@ -7,9 +7,11 @@ const StyledImg = styled.img`
     max-width: ${props => props.maxWidth};
     src: url(${props => props.src});
     position: ${props => props.position};
+    margin: ${props => props.margin || "1%"};
     margin-left: ${props => props.marginLeft};
     top: ${props => props.top};
     left: ${props => props.left};
+    border: ${props => props.border};
 
     @media (max-width: 1292px) {
         position: ${props => props.mobilePos};
@@ -25,6 +27,7 @@ const Image = (props) => {
             width={props.width}
             max-width={props.maxWidth} 
             src={props.src} 
+            margin={props.margin}
             margin-left={props.marginLeft}
             float={props.float} 
             position={props.position}

@@ -5,12 +5,14 @@ const StyledFlowObject = styled.div`
     display: flex;
     align-items: center;
     flex-flow: wrap;
-    margin: ${props => props.margin || "0"};
-    height: ${props => props.height || "200px"};
-    width: ${props => props.width || "200px"};
-    border: ${props => props.border || "2px solid #10124E"};
+    margin: ${props => props.margin || "1%"};
+    min-height: ${props => props.minHeight};
+    height: ${props => props.height};
+    min-width: ${props => props.minWidth};
+    width: ${props => props.width};
+    border: ${props => props.border};
     background-color: ${props => props.inputColor || "#D1DEE8"};
-    border-radius: ${props => props.borderRadius || "10%"};
+    border-radius: ${props => props.borderRadius}
     src: url(${props => props.src});
 `;
 
@@ -29,7 +31,9 @@ const FlowObject = (props) => {
     return (
         <StyledFlowObject
             margin={props.margin}
+            minHeight={props.minHeight}
             height={props.height}
+            minWidth={props.minWidth}
             width={props.width}
             border={props.border}
             inputColor={props.inputColor}
