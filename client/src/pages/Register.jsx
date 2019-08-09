@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import RegistrationLogo from '../styles/RegistrationLogo';
-import FormContainer from '../containers/FormContainer';
+import RegisterForm from '../containers/RegisterForm';
 import { NavLink } from 'react-router-dom';
 
 const RegisterPage = styled.div`
@@ -83,7 +83,7 @@ export class Register extends Component {
         </LeftContainer>
         <RightContainer>
           <MainHeader>REGISTER</MainHeader>
-          <FormContainer />
+          <RegisterForm />
           <Line />
           <Text>Already have an account?
             <NavLink 

@@ -18,11 +18,10 @@ const Centered = styled.div`
   justify-content: center;
 `;
 
-class FormContainer extends Component {
+class LoginForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
       email: '',
       password: ''
     }
@@ -47,17 +46,6 @@ class FormContainer extends Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <PropBlock>
-          <FormLabel value="Firstname" />
-          <FormInput 
-            type="name" 
-            name="name" 
-            id="name" 
-            value={this.state.name} 
-            onChange={this.onTextChange} 
-          />
-        </PropBlock>
-
-        <PropBlock>
           <FormLabel value="Email" />
           <FormInput 
             type="email" 
@@ -81,12 +69,12 @@ class FormContainer extends Component {
 
         <Centered>
           <Button 
-            text="REGISTER"
+            text="LOGIN"
             type="submit"
             borderRadius="4px"
             background="#fff"
             color="#133F86"
-            margin="60px 60px 20px"
+            margin="60px"
             border="2px solid #133F86"
             hoverBG="#133F86"
             hoverColor="#F6F9FE"
@@ -98,4 +86,4 @@ class FormContainer extends Component {
   }
 }
 
-export default FormContainer;
+export default LoginForm;
