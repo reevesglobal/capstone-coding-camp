@@ -70,7 +70,7 @@ const HoverEffect = styled.span`
   }
 `;
 
-export class Login extends Component {
+class Login extends Component {
   render () {
     return (
       <LoginPage>
