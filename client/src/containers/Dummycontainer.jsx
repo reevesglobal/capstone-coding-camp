@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AcceptedScreen from "../privatePages/Welcome";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
@@ -24,6 +25,7 @@ export class Dummycontainer extends Component {
                 <Route path="/contact" render={() => <Contact />} />
                 <Route path="/login" render={() => <Login />} />
                 <Route path="/register" render={() => <Register />} />
+                <Route path="/welcome" render={() => <AcceptedScreen />} />
             </div>
         );
     }
