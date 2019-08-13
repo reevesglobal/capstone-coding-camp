@@ -70,7 +70,7 @@ const HoverEffect = styled.span`
   }
 `;
 
-export class Register extends Component {
+class Register extends Component {
   render () {
     return (
       <RegisterPage>

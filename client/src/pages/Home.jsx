@@ -11,7 +11,7 @@ import Benefits from "../components/Benefits";
 import ReadyToJoin from "../components/ReadyToJoin";
 import Footer from "../components/Footer";
 
-export class Home extends Component {
+class Home extends Component {
   render () {
     return (
       <div>
