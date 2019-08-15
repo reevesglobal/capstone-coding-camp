@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const StyledFlowObject = styled.div`
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-flow: wrap;
     margin: ${props => props.margin || "1%"};
@@ -14,10 +15,16 @@ const StyledFlowObject = styled.div`
     background-color: ${props => props.inputColor || "#D1DEE8"};
     border-radius: ${props => props.borderRadius}
     src: url(${props => props.src});
+
+    @media screen and (max-width: 840px) {
+        order: ${props => props.order};
+        height: ${props => props.heightTablet};
+        width: ${props => props.widthTablet};
+    }
 `;
 
 const Text = styled.p`
-    padding: ${props => props.textPadding || "10px"};
+    padding: ${props => props.textPadding || "5%"};
     margin: 0;
     text-align: center;
     color: ${props => props.textColor || "#225684"};
@@ -39,6 +46,9 @@ const FlowObject = (props) => {
             inputColor={props.inputColor}
             borderRadius={props.borderRadius}
             src={props.src}
+            order={props.order}
+            heightTablet={props.heightTablet}
+            widthTablet={props.widthTablet}
         >
             <Text
                 fontFamily={props.fontFamily}

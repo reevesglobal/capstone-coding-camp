@@ -59,7 +59,7 @@ const FAQs = () => {
     ];
     return (
         <StyledContainer>
-            <SectionTitle label="Frequently Asked Questions" inputColor="" inputPadding="" /> 
+            <SectionTitle label="Frequently Asked Questions" /> 
             <FAQContainer>
                 <Text>Click the question to view the answer</Text>
                 <FAQList questionList={questions} />

@@ -13,91 +13,123 @@ const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-flow: wrap;
 `;
 
 const StyledProcessContainer = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    flex-flow: wrap;
     padding-bottom: 2%;
-    width: 100%;
 `;
 
 const StyledInnerContainer = styled.div`
+    width: 70%;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 75%;
+
+    @media screen and (max-width: 840px) {
+        width: 75%;
+        flex-direction: column;
+    }
 `;
 
 const HowItWorks = () => {
     return (
         <StyledContainer>
-            <SectionTitle label="How It Works" inputColor="" inputPadding="" />
+            <SectionTitle label="How It Works" />
             <StyledProcessContainer>
                 <StyledInnerContainer>
                     <FlowObject 
-                        fontFamily={"Monospace"} 
-                        inputColor={"#F2FCFE"} 
-                        borderRadius={"0%"} 
-                        height={"400px"}
-                        width={"400px"}
-                        border={"none"}
-                        textInput={"Step 1: Register and/or join an event"} />
+                        inputColor="white"
+                        fontFamily="Monospace"
+                        borderRadius="0%"
+                        height="400px"
+                        width="400px"
+                        border="none"
+                        textInput="Step 1: Register and/or join an event"
+                        textSize="2.2em" 
+                        textPadding="10px" 
+                        heightTablet="350px"
+                        widthTablet="350px"
+                    />
                     <Image 
                         src={step1Img}
-                        height={"400px"}
-                        width={"400px"}
+                        height="400px"
+                        width="400px"
+                        heightTablet="350px"
+                        widthTablet="350px"
                     />
                 </StyledInnerContainer>
                 <StyledInnerContainer>
                     <Image 
                         src={step2Img}
-                        height={"400px"}
-                        width={"400px"}
+                        order="2"
+                        height="400px"
+                        width="400px"
+                        heightTablet="350px"
+                        widthTablet="350px"
                     />
                     <FlowObject 
-                        fontFamily={"Monospace"} 
-                        inputColor={"#F2FCFE"} 
-                        borderRadius={"0%"} 
-                        height={"400px"}
-                        width={"400px"}
-                        border={"none"}
-                        textInput={"Step 2: Pitch your project idea to the community and vote for your favourite pitches"} />
+                        fontFamily="Monospace"
+                        inputColor="white"
+                        borderRadius="0%"
+                        height="400px"
+                        width="400px"
+                        border="none"
+                        textInput="Step 2: Pitch your project idea to the community and vote for your favourite pitches"
+                        textSize="2.2em" 
+                        order="1"
+                        heightTablet="350px"
+                        widthTablet="350px"
+                    />
                 </StyledInnerContainer>
                 <StyledInnerContainer>
                     <FlowObject 
-                        fontFamily={"Monospace"} i
-                        inputColor={"#F2FCFE"} 
-                        borderRadius={"0%"} 
-                        height={"400px"}
-                        width={"400px"}
-                        border={"none"}
-                        textInput={"Step 3: Get assigned to a team and start building"} />
+                        fontFamily="Monospace"
+                        inputColor="white"
+                        borderRadius="0%"
+                        height="400px"
+                        width="400px"
+                        border="none"
+                        textInput="Step 3: Get assigned to a team and start building"
+                        textSize="2.2em" 
+                        heightTablet="350px"
+                        widthTablet="350px"
+                    />
                     <Image 
                         src={step3Img}
-                        height={"400px"}
-                        width={"400px"}
+                        height="400px"
+                        width="400px"
+                        heightTablet="350px"
+                        widthTablet="350px"
                     />
                 </StyledInnerContainer>
                 <StyledInnerContainer>
                     <Image 
                         src={step4Img}
-                        height={"400px"}
-                        width={"400px"}
+                        order="2"
+                        height="400px"
+                        width="400px"
+                        heightTablet="350px"
+                        widthTablet="350px"
                     />
                     <FlowObject 
-                        fontFamily={"Monospace"} 
-                        inputColor={"#F2FCFE"} 
-                        borderRadius={"0%"} 
-                        height={"400px"}
-                        width={"400px"}
-                        border={"none"}
-                        textInput={"Step 4: Finish and submit project"} />
+                        fontFamily="Monospace"
+                        inputColor="white"
+                        borderRadius="0%"
+                        height="400px"
+                        width="400px"
+                        border="none"
+                        textInput="Step 4: Finish and submit project"
+                        textSize="2.2em" 
+                        order="1"
+                        heightTablet="350px"
+                        widthTablet="350px"
+                    />
                 </StyledInnerContainer>
             </StyledProcessContainer>
         </StyledContainer>
