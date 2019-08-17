@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 
 const NavContainer = styled.nav`
     display: flex;
-    flex-direction: row;
+    flex-flow: row-wrap;
     justify-content: center;
 `;
 
 const StyledUL = styled.ul`
     display: flex;
-    flex-direction: row;
+    flex-flow: row-wrap;
     justify-content: center;
     align-items: center;
     list-style-type: none;
@@ -46,7 +46,11 @@ const Navigation = (props) => {
                     </Link>
                 </li>
                 <Link to='/' style={{textDecoration:'none'}}>
-                    <Image src={logo} height="125px" width="200px" />
+                    <Image 
+                        src={logo} 
+                        height="125px" 
+                        width="200px" 
+                    />
                 </Link>
                 <li>
                     <Link to='/register/'>

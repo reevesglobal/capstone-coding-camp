@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const StyledImg = styled.img`
     height: ${props => props.height};
+    max-height: ${props => props.maxHeight};
     width: ${props => props.width};
     max-width: ${props => props.maxWidth};
     src: url(${props => props.src});
@@ -30,6 +31,7 @@ const Image = (props) => {
     return (
         <StyledImg 
             height={props.height} 
+            maxHeight={props.maxHeight}
             width={props.width}
             maxWidth={props.maxWidth} 
             src={props.src} 

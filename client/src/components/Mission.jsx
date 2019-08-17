@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from "../styles/SectionTitle";
 import Image from '../styles/Image';
+import connectImg from '../assets/connectImg.png';
+import supportImg from '../assets/supportImg.png';
+import teamImg from '../assets/teamImg.png';
 import FlowObject from '../styles/FlowObject';
 
 const StyledContainer = styled.div`
-    background-color: #F2FCFE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,14 +26,14 @@ const MissionContainer = styled.div`
     @media (max-width: 968px) {  
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
 `;
 
 const StyledInnerContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3%;
+    margin: 0;
 `;
 
 const Mission = () => {
@@ -40,10 +42,19 @@ const Mission = () => {
         <SectionTitle label="Our Mission" />
         <MissionContainer>
             <StyledInnerContainer>
-                <Image src="https://via.placeholder.com/300X184" alt="" />
+                <Image 
+                    src={connectImg} 
+                    alt=""
+                    height="300px"
+                    maxHeight="400px"
+                    width="300px"
+                    maxWidth="400px"
+                    heightTablet="300px"
+                    widthTablet="300px" 
+                />
                 <FlowObject 
-                    borderRadius="1%"
-                    bakground-color="black"
+                    borderRadius="0"
+                    inputColor="rgba(255, 255, 255, 0.5)"
                     textInput="Connect Developers"
                     height="100px"
                     width="300px"
@@ -51,26 +62,41 @@ const Mission = () => {
                 />
             </StyledInnerContainer>
             <StyledInnerContainer>
-                <Image src="https://via.placeholder.com/300X184" alt="" />
+                <Image 
+                    src={teamImg} 
+                    alt=""
+                    height="300px"
+                    maxHeight="400px"
+                    width="300px"
+                    maxWidth="400px"
+                    heightTablet="300px"
+                    widthTablet="300px" 
+                />
                 <FlowObject 
-                    borderRadius="1%"
-                    bakground-color="black"
+                    borderRadius=""
                     textInput="Through Team Projects"
-                    src="https://via.placeholder.com/150"
-                    inputColor=""
+                    inputColor="rgba(255, 255, 255, 0.5)"
                     height="100px"
                     width="300px"
                     border="none"
                 />
             </StyledInnerContainer>
             <StyledInnerContainer>
-                <Image src="https://via.placeholder.com/300X184" alt=""   />
+                <Image 
+                    src={supportImg} 
+                    alt=""
+                    height="300px"
+                    maxHeight="400px"
+                    width="300px"
+                    maxWidth="400px"
+                    heightTablet="300px"
+                    widthTablet="300px" 
+                />
                 <FlowObject 
-                    borderRadius="1%"
-                    bakground-color="black"
+                    borderRadius=""
                     textInput="On a supportive platform"
-                    src="https://via.placeholder.com/150"
-                    inputColor=""
+                    src=""
+                    inputColor="rgba(255, 255, 255, 0.5)"
                     height="100px"
                     width="300px"
                     border="none"

@@ -7,12 +7,11 @@ import secondImg from '../assets/jumboimg2.png';
 
 const StyledJTContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-flow: row-wrap;
 
-    @media (max-width: 968px) {  
+    @media (max-width: 840px) {  
         display: flex;
         flex-direction: column;
         justify-content: center;
