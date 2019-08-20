@@ -7,7 +7,7 @@ const StyledCard = styled.div`
     font-family: 'Roboto', sans-serif;
     background: ${props => props.inputBGColor || "#FFFFFF"};
     max-width: 450px;
-    border: 2px solid #D0F4FB;
+    border: ${ props => props.borderColor};
     display: flex;
     flex-direction: column;
     justify-content: center;
