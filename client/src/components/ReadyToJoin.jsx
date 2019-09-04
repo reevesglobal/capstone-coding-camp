@@ -4,6 +4,7 @@ import SectionTitle from "../styles/SectionTitle";
 import Button from "../styles/Button";
 
 const StyledContainer = styled.div`
+    background-color: #D6ECFF;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,23 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../styles/Button';
-import logo from '../assets/CCClogo_WHITE.png';
+import logo from '../assets/CCC_logo_5.png';
 import Image from '../styles/Image';
 import { Link } from 'react-router-dom';
 
 const NavContainer = styled.nav`
-    display: flex;
-    flex-flow: row-wrap;
-    justify-content: center;
+    width: 100%;
+`;
+
+const StyledNavTitle = styled.span`
+    margin: 0;
+    font-family: 'Roboto', medium, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
 `;
 
 const StyledUL = styled.ul`
     display: flex;
-    flex-flow: row-wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     list-style-type: none;
-    margin-top: 5px;
+    flex-flow: row-wrap;
+    margin: 0;
     padding: 0;
 `;
 
@@ -46,11 +52,9 @@ const Navigation = (props) => {
                     </Link>
                 </li>
                 <Link to='/' style={{textDecoration:'none'}}>
-                    <Image 
-                        src={logo} 
-                        height="125px" 
-                        width="200px" 
-                    />
+                    <StyledNavTitle>
+                        Capstone <Image src={logo} height="1.5em" width="2em" /> Coding Camp
+                    </StyledNavTitle>
                 </Link>
                 <li>
                     <Link to='/register/'>
