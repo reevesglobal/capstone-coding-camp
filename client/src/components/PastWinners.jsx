@@ -5,6 +5,7 @@ import SectionTitle from "../styles/SectionTitle";
 import CCClogo from "../assets/CCClogo.png";
 
 const StyledContainer = styled.div`
+    background-color: #F2FCFE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,6 +61,7 @@ const PastWinners = () => {
                     actions={button}
                 />
                 <InfoCard 
+                    inputBGColor={"#D1DEE8"}
                     icon={CCClogo}
                     title="Team Name 2"
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ea non vero suscipit aut ad hic optio rerum corporis beatae quaerat eum at culpa aliquid temporibus nostrum pariatur dignissimos quis?"

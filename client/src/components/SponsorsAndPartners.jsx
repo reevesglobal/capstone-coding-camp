@@ -4,6 +4,7 @@ import SectionTitle from '../styles/SectionTitle';
 import SponsorsPartnersCard from '../styles/SponsorsPartnersCard';
 
 const StyledBackground = styled.section`
+  background-color: #8EB4D1;
 `;
 
 const StyledPCCardContainer = styled.div`
