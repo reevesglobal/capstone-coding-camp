@@ -7,7 +7,7 @@ const StyledCard = styled.div`
     font-family: 'Roboto', sans-serif;
     background: ${props => props.inputBGColor || "#FFFFFF"};
     max-width: 450px;
-    border: 2px solid #D0F4FB;
+    border: ${ props => props.borderColor};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,8 +41,11 @@ const StyledPhoto = styled.img`
     object-fit: contain;
 `;
 
-const InfoCard = ({ title, text, actions, icon, inputBGColor }) => (
-    <StyledCard inputBGColor={inputBGColor}>
+const InfoCard = ({ title, text, actions, icon, inputBGColor, borderColor }) => (
+    <StyledCard 
+        inputBGColor={inputBGColor} 
+        borderColor={borderColor}
+    >
         <StyledPhoto src={icon} />
         <Title>{title}</Title>
         <Text>{text}</Text>
