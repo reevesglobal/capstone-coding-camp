@@ -52,7 +52,7 @@ const PastWinners = () => {
 
     return (
         <StyledContainer>
-            <SectionTitle label="Past Winners" inputColor="" inputPadding="" />
+            <SectionTitle label="Past Winners" />
             <StyledCardContainer>
                 <InfoCard 
                     icon={CCClogo}
