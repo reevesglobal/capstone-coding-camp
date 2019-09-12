@@ -4,8 +4,9 @@ import Button from '../styles/Button';
 
 const StyledMessage = styled.div`
     display: flex;
-    padding: 100px;
     flex-direction: column;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 `;
 
 const StyledMessageHeading = styled.h4`
@@ -23,25 +24,22 @@ const StyledMessageBody = styled.p`
     font-family: "Roboto", serif;
     font-weight: 300;
     color: #225684;
-    flex-flow: wrap;
     padding-bottom: 40px;
 `;
 
-
-
-const JumboMessage = ({ bodyText }) => {
+const JumboMessage = ({ props }) => {
     return (
         <StyledMessage>
             <StyledMessageHeading>The <strong>Ultimate</strong> Virtual Hackathon Competition</StyledMessageHeading>
             <StyledMessageBody>Build awesome projects with other self-taught developers and designers</StyledMessageBody>
             <Button 
-            text="LEARN MORE" 
-            color="#025093" 
-            border="2px solid #004e92" 
-            margin="auto" 
-            fontFamily="Arial, Bold"
-            fontSize="24px"
-            fontWeight="600"
+                text="LEARN MORE" 
+                color="#025093" 
+                border="2px solid #004e92" 
+                margin="auto" 
+                fontFamily="Arial, Bold"
+                fontSize="24px"
+                fontWeight="600"
             />
         </StyledMessage>
     )

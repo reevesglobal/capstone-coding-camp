@@ -34,7 +34,7 @@ const Image = (props) => {
             maxWidth={props.maxWidth} 
             src={props.src} 
             margin={props.margin}
-            margin-left={props.marginLeft}
+            marginLeft={props.marginLeft}
             float={props.float} 
             position={props.position}
             top={props.top}

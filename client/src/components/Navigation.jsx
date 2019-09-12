@@ -1,83 +1,96 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../styles/Button';
-import logo from '../assets/CCC_logo_5.png';
+import HBMButton from './HamburgerMenu/HBMButton.jsx';
+import logo from '../assets/CCClogo_WHITE.png';
 import Image from '../styles/Image';
 import { Link } from 'react-router-dom';
 
-const NavContainer = styled.nav`
-    width: 100%;
+const NavHeader = styled.header`
+    background-color: rgb(3,80,147);
 `;
 
-const StyledNavTitle = styled.span`
-    margin: 0;
-    font-family: 'Roboto', medium, sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
-    color: #ffffff;
+const NavContainer = styled.nav`
+    display: flex; 
+    align-items: center;
+`;
+
+const Spacer = styled.div`
+    flex: 1;
 `;
 
 const StyledUL = styled.ul`
-    display: flex;
-    justify-content: space-between;
+    text-decoration: none;
     list-style-type: none;
-    flex-flow: row-wrap;
     margin: 0;
     padding: 0;
+    display: flex;
+
+    @media (max-width: 848px) {
+        display: none;
+    }
+`;
+
+const StyledLiItem = styled.li`
 `;
 
 const Navigation = (props) => {
     return (
-        <NavContainer>
-            <StyledUL>  
-                <li>
-                    <Link to='/about/'>
-                        <Button 
-                            hoverColor="royalblue" 
-                            text="About" 
-                            hoverBG="white" 
-                            margin="10px" 
-                        />
-                    </Link>
-                </li>
-                <li>
-                    <Link to='/contact/'>
-                        <Button 
-                            hoverColor="royalblue" 
-                            text="Contact" 
-                            hoverBG="white" 
-                            margin="10px"   
-                        />
-                    </Link>
-                </li>
-                <Link to='/' style={{textDecoration:'none'}}>
-                    <StyledNavTitle>
-                        Capstone <Image src={logo} height="1.5em" width="2em" /> Coding Camp
-                    </StyledNavTitle>
+        <NavHeader>
+            <NavContainer className="navBar">
+                <Link className="navLogo" to="/">
+                    <Image 
+                        src={logo}
+                        marginLeft="1rem"
+                        maxWidth="165px"
+                    />
                 </Link>
-                <li>
-                    <Link to='/register/'>
-                        <Button 
-                            hoverColor="royalblue"  
-                            text="Join now" 
-                            hoverBG="white" 
-                            margin="10px"  
-                        />
-                    </Link>
-                </li>
-                <li>
-                    <Link to='/login/'>
-                        <Button 
-                            hoverColor="royalblue"
-                            text="Login"
-                            hoverBG="white"  
-                            margin="10px 20px" 
-                        />
-                    </Link>
-                </li>  
-            </StyledUL> 
-        </NavContainer>          
+                <Spacer></Spacer>
+                <StyledUL className="navItems">  
+                    <StyledLiItem>
+                        <Link to='/about/'>
+                            <Button 
+                                hoverColor="royalblue" 
+                                text="About" 
+                                hoverBG="white" 
+                                margin="10px" 
+                            />
+                        </Link>
+                    </StyledLiItem>
+                    <StyledLiItem>
+                        <Link to='/contact/'>
+                            <Button 
+                                hoverColor="royalblue" 
+                                text="Contact" 
+                                hoverBG="white" 
+                                margin="10px"   
+                            />
+                        </Link>
+                    </StyledLiItem>
+                    <StyledLiItem>
+                        <Link to='/register/'>
+                            <Button 
+                                hoverColor="royalblue"  
+                                text="Join now" 
+                                hoverBG="white" 
+                                margin="10px"  
+                            />
+                        </Link>
+                    </StyledLiItem>
+                    <StyledLiItem>
+                        <Link to='/login/'>
+                            <Button 
+                                hoverColor="royalblue"
+                                text="Login"
+                                hoverBG="white"  
+                                margin="10px 20px" 
+                            />
+                        </Link>
+                    </StyledLiItem>  
+                </StyledUL> 
+                <HBMButton />
+            </NavContainer>
+        </NavHeader>          
     );
 }
 

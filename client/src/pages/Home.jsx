@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import JumboNavContainer from "../containers/JumboNavContainer";
 import Mission from "../components/Mission";
 import Navigation from "../components/Navigation";
+import HamburgerMenu from "../components/HamburgerMenu/HamburgerMenu";
 import Jumbotron from "../components/Jumbotron";
 import HowItWorks from "../components/HowItWorks";
 import PastWinners from "../components/PastWinners";
@@ -15,10 +15,9 @@ class Home extends Component {
   render () {
     return (
       <div>
-        <JumboNavContainer>
-          <Navigation />
-          <Jumbotron />
-        </JumboNavContainer>
+        <Navigation />
+        <HamburgerMenu />
+        <Jumbotron />
         <Mission />
         <HowItWorks />
         <PastWinners />
