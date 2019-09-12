@@ -6,7 +6,7 @@ const StyledTitle = styled.h2`
   margin: 0 0 30px 0;
   font-family: 'Roboto', sans-serif;
   font-size: 3.5em;
-  font-weight: 3.5;
+  font-weight: 300;
   text-align: center;
   color: ${props => props.inputColor || "#A50000"};
   text-transform: uppercase;
