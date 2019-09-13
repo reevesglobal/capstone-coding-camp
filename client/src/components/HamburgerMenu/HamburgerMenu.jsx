@@ -17,6 +17,7 @@ const StyledNavSlider = styled.nav`
 const StyledNavList = styled.ul`
     text-decoration: none;
     list-style-type: none;
+    text-align: right;
     margin: 0;
     padding: 0;
     display: flex;
