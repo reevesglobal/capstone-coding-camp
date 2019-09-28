@@ -2,26 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import JumboMessage from '../styles/JumboMessage';
 import Image from '../styles/Image';
-import img from '../assets/jumboimg.png';
-import secondImg from '../assets/jumboimg2.png';
+import CCClogo from '../assets/CCC_logo_5.png';
 
 const StyledJTContainer = styled.div`
     display: flex;
-    justify-content: space-between;
-`
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
+    background-image: linear-gradient(#035093, #f2fcfe);
 
-const Jumbotron = () => {
+    @media (max-width: 800px) {  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+`;
+
+const Jumbotron = (props) => {
     return (
         <StyledJTContainer>
-            <Image height="480px"  src={secondImg}   />
             <Image 
-            height="auto"  
-            src={img}  
-            position="absolute" 
-            top="10em" 
-            left="6em" 
-            mobilePos="absolute"  
-            mobileTop="15em"
+                src={CCClogo} 
+                height="450px"
+                maxHeight="500px"
+                heightTablet="350px"
             />
             <JumboMessage />
         </StyledJTContainer>

@@ -19,14 +19,14 @@ const StyledContainer = styled.div`
 
 const MissionContainer = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-flow: wrap;
     width: 100%;
     margin: 0px;
+
     @media (max-width: 968px) {  
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
 `;
 
 const StyledInnerContainer = styled.div`

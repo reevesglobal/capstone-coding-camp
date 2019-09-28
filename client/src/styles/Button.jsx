@@ -10,7 +10,7 @@ const StyledButton = styled.button`
         border: ${props => props.hoverBorder}
     }
     :focus {
-      outline: none;
+        outline: none;
     }
     font-size: ${props => props.fontSize || "22px"};
     font-family: ${props => props.fontFamily || "verdana"};
